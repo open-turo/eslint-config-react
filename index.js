@@ -1,0 +1,46 @@
+module.exports = {
+  parser: "@typescript-eslint/parser",
+  plugins: ["react", "react-hooks", "jsx-a11y"],
+  extends: [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+  ],
+  parserOptions: {
+    ecmaVersion: 2022,
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  rules: {
+    rules: {
+      "jsx-a11y/anchor-is-valid": [
+        "warn",
+        {
+          specialLink: ["to"],
+        },
+      ],
+      // don't force .jsx extension
+      "react/jsx-filename-extension": "off",
+      // In TS you must use the Fragment syntax instead of the shorthand
+      "react/jsx-fragments": "off",
+      // This allows props to be spread in JSX
+      "react/jsx-props-no-spreading": "off",
+      // ensure props are alphabetical
+      "react/jsx-sort-props": "error",
+      // We don't need default props on TS components
+      "react/require-default-props": "off",
+      "react/sort-prop-types": "error",
+      // State initialization can be in the constructor or via class fields
+      "react/state-in-constructor": "off",
+      // This allows static properties to be placed within the class declaration
+      "react/static-property-placement": "off",
+    },
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
+};
