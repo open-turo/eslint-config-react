@@ -8,12 +8,12 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: wagoid/commitlint-github-action@v4
-      - uses: actions/setup-python@v2
-      - uses: KeisukeYamashita/setup-release@v1.0.2
-        with:
-          repository: rhysd/actionlint
-      - uses: pre-commit/action@v2.0.0
+      - name: Download actionlint
+        run: |
+          mkdir -p "$HOME/bin"
+          bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash) latest "$HOME/bin"
+          echo "${HOME}/bin" >> "$GITHUB_PATH"
+      - uses: open-turo/action-pre-commit@v1
