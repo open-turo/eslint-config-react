@@ -13,6 +13,15 @@ repository extend the default `@open-turo/eslint-config-typescript` config inste
 free to create a PR to add a new default that extends it, and rename the current configurations to `legacy` and
 `legacy-extended` respectively. We are not doing that for now to reduce maintenance burden, as it would be unused.
 
+[![Release](https://img.shields.io/github/v/release/open-turo/eslint-config-react)](https://github.com/open-turo/eslint-config-react/releases/)
+[![Tests pass/fail](https://img.shields.io/github/workflow/status/open-turo/eslint-config-react/CI)](https://github.com/open-turo/eslint-config-react/actions/)
+[![License](https://img.shields.io/github/license/open-turo/eslint-config-react)](./LICENSE)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/dwyl/esta/issues)
+![CI](https://github.com/open-turo/eslint-config-react/actions/workflows/release.yaml/badge.svg)
+[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+[![Conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.2-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
+[![Join us!](https://img.shields.io/badge/Turo-Join%20us%21-593CFB.svg)](https://turo.com/jobs)
+
 ## Usage
 
 Install the package and all of its peer dependencies:
