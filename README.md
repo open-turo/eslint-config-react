@@ -3,6 +3,16 @@
 Turo eslint configuration for react. The config expects that Typescript is being used as it extends
 `eslint-config-typescript`.
 
+## Relevant notes
+
+The `eslint` configurations in this repo extend `@open-turo/eslint-config-typescript/legacy`; as it is the base TS
+eslint config that supports our existing front-end codebase.
+
+However, if you are creating a new React project and you think you would benefit from having the configurations in this
+repository extend the default `@open-turo/eslint-config-typescript` config instead, please raise an issue and/or feel
+free to create a PR to add a new default that extends it, and rename the current configurations to `legacy` and
+`legacy-extended` respectively. We are not doing that for now to reduce maintenance burden, as it would be unused.
+
 ## Usage
 
 Install the package and all of its peer dependencies:
