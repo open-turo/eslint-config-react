@@ -671,9 +671,9 @@
     "@octokit/openapi-types" "^14.0.0"
 
 "@open-turo/commitlint-config-conventional@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@open-turo/commitlint-config-conventional/-/commitlint-config-conventional-1.0.2.tgz#b98e154d2622dfaeece2a72ab5a00e75e16c7cb6"
-  integrity sha512-fd3Kgud3u82dd8rebm5yb8OWz43h3Lkb7Ulb+BofY+Qf/Tq92I4uI+38RptFLEGy5HORmfabzqzwiDSlhHy47Q==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@open-turo/commitlint-config-conventional/-/commitlint-config-conventional-1.0.3.tgz#446b5c04d574cf45cf6913905bbaeb3a2dd216ae"
+  integrity sha512-mKTf4qc+UaIb/fIP4jzu8xt3oF90SRQLM6TCRjKOl33clATnzFj+POi+ltZ0V77u/iIIOaOJf60WS6cQgAzdxA==
   dependencies:
     "@commitlint/config-conventional" "^16.2.1"
 
