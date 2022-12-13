@@ -44,12 +44,19 @@ has been integrated into the default preset.
 
 ## Development
 
+### Pre-commit
+
 Install [pre-commit](https://pre-commit.com/) and the commit hooks:
 
 ```shell
 pre-commit install
 pre-commit install --hook-type commit-msg
 ```
+
+### Keeping peerDependencies up-to-date
+
+Transitive `peerDependencies` should be added, and kept up to date. A useful tool for that task is
+`npx check-peer-dependencies`, which shows us our missing (or outdated) peerDependencies.
 
 ## Get Help
 
