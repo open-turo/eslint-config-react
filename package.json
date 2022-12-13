@@ -4,7 +4,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "@open-turo/commitlint-config-conventional": "^1.0.2",
-    "@open-turo/eslint-config-typescript": "^2.0.1",
+    "@open-turo/eslint-config-typescript": "^2.1.0",
     "@semantic-release/git": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
@@ -34,7 +34,7 @@
   "main": "index.js",
   "name": "@open-turo/eslint-config-react",
   "peerDependencies": {
-    "@open-turo/eslint-config-typescript": "^2.0.1",
+    "@open-turo/eslint-config-typescript": "^2.1.0",
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
     "eslint": "^8.29.0",
