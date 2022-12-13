@@ -677,10 +677,10 @@
   dependencies:
     "@commitlint/config-conventional" "^16.2.1"
 
-"@open-turo/eslint-config-typescript@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@open-turo/eslint-config-typescript/-/eslint-config-typescript-2.0.0.tgz#7517d5d5a52787f567ab60eb8bc5a203b6c46475"
-  integrity sha512-rlllYuTOmOfYDFrj/4lUuXC81v9fUAjSEOMwIrJs0PYPlEholuimfmDVBM9zGyvd8UMeBpoPcWviBOrTKhLWCA==
+"@open-turo/eslint-config-typescript@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@open-turo/eslint-config-typescript/-/eslint-config-typescript-2.0.1.tgz#fd7f259a9bbc5b18f91fa23f19fbb193a46aedcf"
+  integrity sha512-tyuo9eEo5W3JcMefozu0VHhi8eHeW6jmkNkVV+HTBBEKUN6oVHmi+ALDpgMXUroqiiEMOZcH+m8TbCJuTdSAIQ==
   optionalDependencies:
     eslint-plugin-unicorn "^45.0.0"
 
