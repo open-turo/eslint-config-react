@@ -14,7 +14,7 @@ free to create a PR to add a new default that extends it, and rename the current
 `legacy-extended` respectively. We are not doing that for now to reduce maintenance burden, as it would be unused.
 
 [![Release](https://img.shields.io/github/v/release/open-turo/eslint-config-react)](https://github.com/open-turo/eslint-config-react/releases/)
-[![Tests pass/fail](https://img.shields.io/github/workflow/status/open-turo/eslint-config-react/CI)](https://github.com/open-turo/eslint-config-react/actions/)
+[![Tests pass/fail](https://img.shields.io/github/actions/workflow/status/open-turo/eslint-config-react/ci.yaml)](https://github.com/open-turo/eslint-config-react/actions/)
 [![License](https://img.shields.io/github/license/open-turo/eslint-config-react)](./LICENSE)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/dwyl/esta/issues)
 ![CI](https://github.com/open-turo/eslint-config-react/actions/workflows/release.yaml/badge.svg)
