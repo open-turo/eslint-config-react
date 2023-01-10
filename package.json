@@ -4,7 +4,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.4.1",
     "@open-turo/commitlint-config-conventional": "1.0.4",
-    "@open-turo/eslint-config-typescript": "2.4.0",
+    "@open-turo/eslint-config-typescript": "2.6.0",
     "@open-turo/semantic-release-config": "1.0.1",
     "@typescript-eslint/eslint-plugin": "5.48.1",
     "@typescript-eslint/parser": "5.48.1",
