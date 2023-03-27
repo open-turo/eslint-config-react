@@ -31,6 +31,9 @@
   "homepage": "https://github.com/open-turo/eslint-config-react#readme",
   "license": "MIT",
   "main": "index.js",
+  "scripts": {
+    "release": "semantic-release"
+  },
   "name": "@open-turo/eslint-config-react",
   "peerDependencies": {
     "@open-turo/eslint-config-typescript": "^3.0.2",
