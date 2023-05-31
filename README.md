@@ -39,8 +39,12 @@ To use this config, just add to your `.eslintrc` the following:
 "extends": "@open-turo/eslint-config-typescript"
 ```
 
-We used to have an alternative `extended` preset, which added more react-related plugins, but after some testing, it
-has been integrated into the default preset.
+For NextJs based applications, we have a separate preset that extends the `@open-turo/eslint-config-typescript` config.
+To use this preset, add the following instead to your `.eslintrc`:
+
+```
+"extends": "@open-turo/eslint-config-typescript/next"
+```
 
 ## Development
 
