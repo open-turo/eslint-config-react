@@ -3,6 +3,7 @@
   "description": "Turo eslint configuration for react",
   "devDependencies": {
     "@commitlint/cli": "17.6.5",
+    "@next/eslint-plugin-next": "13.4.3",
     "@open-turo/commitlint-config-conventional": "1.1.0",
     "@open-turo/eslint-config-typescript": "3.0.2",
     "@open-turo/semantic-release-config": "2.0.0",
