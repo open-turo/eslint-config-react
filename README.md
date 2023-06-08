@@ -24,10 +24,10 @@ free to create a PR to add a new default that extends it, and rename the current
 
 ## Usage
 
-Install the package and all of its peer dependencies:
+If you don't need a NextJs linting preset, run the following command
 
 ```shell
-npx install-peerdeps --dev @open-turo/eslint-config-react
+npx install-peerdeps --dev --no-optional @open-turo/eslint-config-react
 ```
 
 Then in your `.eslintrc` file, extend from the default configuration of this package, which is the recommended eslint
@@ -39,8 +39,13 @@ To use this config, just add to your `.eslintrc` the following:
 "extends": "@open-turo/eslint-config-typescript"
 ```
 
-For NextJs based applications, we have a separate preset that extends the `@open-turo/eslint-config-typescript` config.
-To use this preset, add the following instead to your `.eslintrc`:
+However, if you need a NextJs linting preset, run
+
+```shell
+npx install-peerdeps --dev @open-turo/eslint-config-react
+```
+
+Then add the following instead to your `.eslintrc`:
 
 ```
 "extends": "@open-turo/eslint-config-typescript/next"

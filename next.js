@@ -1,8 +1,5 @@
 module.exports = {
-  extends: [
-    "@open-turo/eslint-config-typescript",
-    "plugin:@next/next/recommended",
-  ],
+  extends: ["@open-turo/eslint-config-typescript", "next"],
   rules: {
     "import/no-default-export": "off",
     "import/no-extraneous-dependencies": [
