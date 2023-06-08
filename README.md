@@ -33,7 +33,7 @@ npx install-peerdeps --dev --no-optional @open-turo/eslint-config-react
 Then in your `.eslintrc` file, extend from the default configuration of this package, which is the recommended eslint
 configuration for our existing front-end projects.
 
-To use this config, just add to your `.eslintrc` the following:
+To use this config, just add to your `.eslintrc` the following
 
 ```
 "extends": "@open-turo/eslint-config-typescript"
