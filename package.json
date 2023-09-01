@@ -61,5 +61,5 @@
     "access": "public"
   },
   "repository": "https://github.com/open-turo/eslint-config-react",
-  "version": "3.0.0"
+  "version": "4.0.0"
 }
