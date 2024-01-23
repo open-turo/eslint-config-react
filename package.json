@@ -2,16 +2,16 @@
   "author": "Turo engineering",
   "description": "Turo eslint configuration for react",
   "devDependencies": {
-    "@commitlint/cli": "18.4.4",
+    "@commitlint/cli": "18.5.0",
     "@open-turo/commitlint-config-conventional": "1.1.0",
     "@open-turo/eslint-config-typescript": "7.0.0",
-    "@typescript-eslint/eslint-plugin": "6.18.1",
-    "@typescript-eslint/parser": "6.18.1",
+    "@typescript-eslint/eslint-plugin": "6.19.1",
+    "@typescript-eslint/parser": "6.19.1",
     "eslint": "8.56.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-typescript": "3.6.1",
     "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-jest": "27.6.2",
+    "eslint-plugin-jest": "27.6.3",
     "eslint-plugin-json": "3.1.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-node": "11.1.0",
@@ -23,7 +23,7 @@
     "eslint-plugin-sort-destructure-keys": "1.5.0",
     "eslint-plugin-typescript-sort-keys": "3.1.0",
     "eslint-plugin-unicorn": "49.0.0",
-    "prettier": "3.1.1"
+    "prettier": "3.2.4"
   },
   "engines": {
     "node": ">= 18"
