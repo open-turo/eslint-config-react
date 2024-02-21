@@ -4,7 +4,7 @@
   "devDependencies": {
     "@commitlint/cli": "18.6.0",
     "@open-turo/commitlint-config-conventional": "1.1.0",
-    "@open-turo/eslint-config-typescript": "7.0.0",
+    "@open-turo/eslint-config-typescript": "8.0.0",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "eslint": "8.56.0",
@@ -38,7 +38,7 @@
   },
   "name": "@open-turo/eslint-config-react",
   "peerDependencies": {
-    "@open-turo/eslint-config-typescript": "^7.0.0",
+    "@open-turo/eslint-config-typescript": "^7.0.0 || ^8.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": ">=8.18.0",
