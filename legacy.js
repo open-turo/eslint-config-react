@@ -6,7 +6,7 @@ module.exports = {
   },
   ignorePatterns: ["babel.config.js"],
   extends: [
-    "@open-turo/eslint-config-typescript",
+    "@open-turo/eslint-config-typescript/legacy",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
