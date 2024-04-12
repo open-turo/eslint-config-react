@@ -12,16 +12,6 @@ Turo eslint configuration for react. The config expects that Typescript is being
 [![Conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.2-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 [![Join us!](https://img.shields.io/badge/Turo-Join%20us%21-593CFB.svg)](https://turo.com/jobs)
 
-## Relevant notes
-
-The `eslint` configurations in this repo extend `@open-turo/eslint-config-typescript/legacy`; as it is the base TS
-eslint config that supports our existing front-end codebase.
-
-However, if you are creating a new React project and you think you would benefit from having the configurations in this
-repository extend the default `@open-turo/eslint-config-typescript` config instead, please raise an issue and/or feel
-free to create a PR to add a new default that extends it, and rename the current configurations to `legacy` and
-`legacy-extended` respectively. We are not doing that for now to reduce maintenance burden, as it would be unused.
-
 ## Usage
 
 Install the package and all of its peer dependencies:
@@ -39,8 +29,18 @@ To use this config, just add to your `.eslintrc` the following:
 "extends": "@open-turo/eslint-config-typescript"
 ```
 
-We used to have an alternative `extended` preset, which added more react-related plugins, but after some testing, it
-has been integrated into the default preset.
+### Legacy preset
+
+There is a `legacy` preset that extends `@open-turo/eslint-config-typescript/legacy`. This only exists for backwards
+compatibility with existing projects. It is strongly recommended to use the standard preset.
+
+To use the `legacy` preset, update your `.eslintrc` file to be:
+
+```json
+{
+  "extends": "@open-turo/eslint-config-react/legacy"
+}
+```
 
 ## Development
 
