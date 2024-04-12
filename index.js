@@ -8,6 +8,7 @@ module.exports = {
   extends: [
     "@open-turo/eslint-config-typescript",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
   ],
@@ -43,6 +44,8 @@ module.exports = {
     "react/jsx-props-no-spreading": "off",
     // ensure props are alphabetical
     "react/jsx-sort-props": "error",
+    // Allow emotion css prop
+    "react/no-unknown-property": ["error", { ignore: ["css"] }],
     // We don't need default props on TS components
     "react/require-default-props": "off",
     "react/sort-prop-types": "error",
@@ -50,6 +53,8 @@ module.exports = {
     "react/state-in-constructor": "off",
     // This allows static properties to be placed within the class declaration
     "react/static-property-placement": "off",
+    // Allow file names to match a component name
+    "unicorn/filename-case": "off",
   },
   settings: {
     react: {
