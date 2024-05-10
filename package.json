@@ -2,7 +2,7 @@
   "author": "Turo engineering",
   "description": "Turo eslint configuration for react",
   "dependencies": {
-    "@open-turo/eslint-config-typescript": "8.0.6",
+    "@open-turo/eslint-config-typescript": "8.0.8",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-json": "3.1.0",
     "eslint-plugin-react": "7.34.1",
