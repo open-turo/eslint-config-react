@@ -50,6 +50,12 @@ module.exports = {
     "react/state-in-constructor": "off",
     // This allows static properties to be placed within the class declaration
     "react/static-property-placement": "off",
+    // Already covered with react/no-array-index-key
+    "sonarjs/no-array-index-key": "off",
+    // Already covered with react/no-unknown-property
+    "sonarjs/no-unknown-property": "off",
+    "sonarjs/jsx-no-useless-fragment": "off",
+    "sonarjs/no-unstable-nested-components": "off",
   },
   settings: {
     react: {
