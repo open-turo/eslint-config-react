@@ -50,6 +50,16 @@ module.exports = {
     "react/state-in-constructor": "off",
     // This allows static properties to be placed within the class declaration
     "react/static-property-placement": "off",
+    /**
+     * Rules that significantly impact performance time of eslint, and are not
+     * necessarily relevant for react applications.
+     */
+    "sonarjs/aws-apigateway-public-api": "off",
+    "sonarjs/aws-ec2-rds-dms-public": "off",
+    "sonarjs/aws-iam-all-privileges": "off",
+    "sonarjs/aws-iam-privilege-escalation": "off",
+    "sonarjs/aws-iam-public-access": "off",
+    "sonarjs/aws-restricted-ip-admin-access": "off",
     // Already covered with react/no-array-index-key
     "sonarjs/no-array-index-key": "off",
     // Already covered with react/no-unknown-property
