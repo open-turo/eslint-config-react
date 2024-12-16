@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  plugins: ["react", "react-hooks", "jsx-a11y"],
+  plugins: ["react", "react-hooks", "jsx-a11y", "eslint-plugin-react-compiler"],
   env: {
     browser: true,
   },
@@ -53,6 +53,20 @@ module.exports = {
     "react/state-in-constructor": "off",
     // This allows static properties to be placed within the class declaration
     "react/static-property-placement": "off",
+    /** ESLint plugin for the React Compiler, to enforce rules that make adopting it easier/more effective */
+    "react-compiler/react-compiler": [
+      "error",
+      {
+        environment: {
+          /**
+           * At the time of writing, `eslint-plugin-react-compiler` errors on ref usages in render paths. This rule is noisy,
+           * since it currently reports false positives. We can remove this in the future when the rule is more accurate.
+           * {@link https://github.com/facebook/react/pull/30843 PR that disables this rule in the default config}
+           */
+          validateRefAccessDuringRender: false,
+        },
+      },
+    ],
     /*
      * Rules that significantly impact performance time of eslint, and are not
      * necessarily relevant for react applications.
