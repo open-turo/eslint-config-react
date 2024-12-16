@@ -23,7 +23,7 @@ module.exports = {
         specialLink: ["to"],
       },
     ],
-    "node/no-unpublished-import": [
+    "n/no-unpublished-import": [
       "error",
       {
         allowModules: [
