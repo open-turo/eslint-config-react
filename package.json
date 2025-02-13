@@ -13,7 +13,7 @@
     "prettier": "3.5.2"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 20"
   },
   "homepage": "https://github.com/open-turo/eslint-config-react#readme",
   "license": "MIT",
