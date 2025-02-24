@@ -86,6 +86,25 @@ module.exports = {
     "sonarjs/no-unstable-nested-components": "off",
     // Allow file names to match a component name
     "unicorn/filename-case": "off",
+    /**
+     * Prescriptive rule about only using `undefined`, never `null`, to avoid `null`-specific errors.
+     * Not compatible with React because `null` is a valid JSX return.
+     */
+    "unicorn/no-null": 0,
+    // Allow common React abbreviations
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        replacements: {
+          el: false,
+          prop: false,
+          props: false,
+          ref: false,
+          rel: false,
+          src: false,
+        },
+      },
+    ],
   },
   settings: {
     react: {
