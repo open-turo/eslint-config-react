@@ -2806,10 +2806,13 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
     {
       "replacements": {
+        "args": false,
+        "e": false,
         "el": false,
         "prop": false,
         "props": false,
         "ref": false,
+        "rel": false,
         "src": false,
       },
     },
@@ -5789,10 +5792,13 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
     {
       "replacements": {
+        "args": false,
+        "e": false,
         "el": false,
         "prop": false,
         "props": false,
         "ref": false,
+        "rel": false,
         "src": false,
       },
     },
@@ -9194,10 +9200,13 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
     {
       "replacements": {
+        "args": false,
+        "e": false,
         "el": false,
         "prop": false,
         "props": false,
         "ref": false,
+        "rel": false,
         "src": false,
       },
     },
