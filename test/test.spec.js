@@ -44,7 +44,7 @@ describe("validate config", () => {
       });
       const { default: config } = await import(`../${configFile}`);
       const linter = new ESLint({
-        baseConfig: config,
+        baseConfig: config(),
         overrideConfig: [
           {
             files: [testFileName],
