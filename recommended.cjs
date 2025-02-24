@@ -1,22 +1,23 @@
 module.exports = {
-  root: true,
-  plugins: ["react", "react-hooks", "jsx-a11y", "eslint-plugin-react-compiler"],
   env: {
     browser: true,
   },
-  ignorePatterns: ["babel.config.js"],
   extends: [
-    "@open-turo/eslint-config-typescript",
+    "@open-turo/eslint-config-typescript/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
   ],
+  ignorePatterns: ["babel.config.js"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
+    jsxPragma: "React",
   },
+  plugins: ["react", "react-hooks", "jsx-a11y", "eslint-plugin-react-compiler"],
+  root: true,
   rules: {
     "jsx-a11y/anchor-is-valid": [
       "warn",
@@ -36,6 +37,20 @@ module.exports = {
         ],
       },
     ],
+    /** ESLint plugin for the React Compiler, to enforce rules that make adopting it easier/more effective */
+    "react-compiler/react-compiler": [
+      "error",
+      {
+        environment: {
+          /**
+           * At the time of writing, `eslint-plugin-react-compiler` errors on ref usages in render paths. This rule is noisy,
+           * since it currently reports false positives. We can remove this in the future when the rule is more accurate.
+           * {@link https://github.com/facebook/react/pull/30843 PR that disables this rule in the default config}
+           */
+          validateRefAccessDuringRender: false,
+        },
+      },
+    ],
     // don't force .jsx extension
     "react/jsx-filename-extension": "off",
     // In TS you must use the Fragment syntax instead of the shorthand
@@ -53,20 +68,6 @@ module.exports = {
     "react/state-in-constructor": "off",
     // This allows static properties to be placed within the class declaration
     "react/static-property-placement": "off",
-    /** ESLint plugin for the React Compiler, to enforce rules that make adopting it easier/more effective */
-    "react-compiler/react-compiler": [
-      "error",
-      {
-        environment: {
-          /**
-           * At the time of writing, `eslint-plugin-react-compiler` errors on ref usages in render paths. This rule is noisy,
-           * since it currently reports false positives. We can remove this in the future when the rule is more accurate.
-           * {@link https://github.com/facebook/react/pull/30843 PR that disables this rule in the default config}
-           */
-          validateRefAccessDuringRender: false,
-        },
-      },
-    ],
     /*
      * Rules that significantly impact performance time of eslint, and are not
      * necessarily relevant for react applications.
@@ -77,11 +78,11 @@ module.exports = {
     "sonarjs/aws-iam-privilege-escalation": "off",
     "sonarjs/aws-iam-public-access": "off",
     "sonarjs/aws-restricted-ip-admin-access": "off",
+    "sonarjs/jsx-no-useless-fragment": "off",
     // Already covered with react/no-array-index-key
     "sonarjs/no-array-index-key": "off",
     // Already covered with react/no-unknown-property
     "sonarjs/no-unknown-property": "off",
-    "sonarjs/jsx-no-useless-fragment": "off",
     "sonarjs/no-unstable-nested-components": "off",
     // Allow file names to match a component name
     "unicorn/filename-case": "off",
