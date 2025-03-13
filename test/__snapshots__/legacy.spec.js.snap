@@ -1942,7 +1942,7 @@ exports[`validate config Legacy - load config file in ESLint to validate all rul
       "error",
     ],
     "sonarjs/certificate-transparency": [
-      "error",
+      "off",
     ],
     "sonarjs/chai-determinate-assertion": [
       "error",
