@@ -20,27 +20,23 @@ Install the package and all of its peer dependencies:
 npx install-peerdeps --dev @open-turo/eslint-config-react
 ```
 
-Then in your `.eslintrc` file, extend from the default configuration of this package, which is the recommended eslint
-configuration for our existing front-end projects.
+### [`eslint.config.js`](https://eslint.org/docs/latest/use/configure/configuration-files-new) (requires eslint>=v8.23.0)
 
-To use this config, just add to your `.eslintrc` the following:
+```js
+const turoConfig = require("@open-turo/eslint-config-react");
 
+module.exports = turoConfig();
 ```
-"extends": "@open-turo/eslint-config-typescript"
-```
 
-### Legacy preset
+### **[.eslintrc](https://eslint.org/docs/latest/use/configure/configuration-files)** (legacy example)
 
-There is a `legacy` preset that extends `@open-turo/eslint-config-typescript/legacy`. This only exists for backwards
-compatibility with existing projects. It is strongly recommended to use the standard preset.
-
-To use the `legacy` preset, update your `.eslintrc` file to be:
-
-```json
+```jsonc
 {
-  "extends": "@open-turo/eslint-config-react/legacy"
+  "extends": "@open-turo/eslint-config-react/recommended",
 }
 ```
+
+You will have to set the `ESLINT_USE_FLAT_CONFIG` env var to true.
 
 ## Development
 
