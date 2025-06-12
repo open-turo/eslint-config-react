@@ -4,7 +4,6 @@ const reactPlugin = require("eslint-plugin-react");
 const reactCompilerPlugin = require("eslint-plugin-react-compiler");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
 const globals = require("globals");
-// TODO We can't do this because this function is not here directly technically
 const tseslint = require("typescript-eslint");
 
 /**
