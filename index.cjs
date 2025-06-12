@@ -4,7 +4,8 @@ const reactPlugin = require("eslint-plugin-react");
 const reactCompilerPlugin = require("eslint-plugin-react-compiler");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
 const globals = require("globals");
-// TODO We can't do this because this function is not here directly technically
+// TODO typescript-eslint is not a dependency in this repository,
+// but a transitive dependency coming from @open-turo/eslint-config-typescript
 const tseslint = require("typescript-eslint");
 
 /**
