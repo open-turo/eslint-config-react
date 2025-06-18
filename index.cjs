@@ -1,3 +1,5 @@
+// @ts-check
+
 const turoConfig = require("@open-turo/eslint-config-typescript");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactPlugin = require("eslint-plugin-react");
@@ -7,9 +9,8 @@ const globals = require("globals");
 const tseslint = require("typescript-eslint");
 
 /**
- *
  * @param {object} options ESLint configuration options
- * @param {object} options.turo ESLing configuration options for open-turo/eslint-config-typescript. See their documentation for available options.
+ * @param {Parameters<typeof turoConfig>[0]} [options.turo] ESLint configuration options for `@open-turo/eslint-config-typescript`
  * @returns Configuration Array
  */
 module.exports = function config(options = {}) {
@@ -70,7 +71,7 @@ module.exports = function config(options = {}) {
     },
     {
       extends: [
-        reactPlugin.configs.flat.recommended,
+        reactPlugin.configs.flat["recommended"],
         reactPlugin.configs.flat["jsx-runtime"],
         jsxA11yPlugin.flatConfigs.recommended,
         reactCompilerPlugin.configs.recommended,
