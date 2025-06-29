@@ -3,7 +3,7 @@
   "description": "Turo eslint configuration for react",
   "type": "module",
   "dependencies": {
-    "@open-turo/eslint-config-typescript": "17.0.4",
+    "@open-turo/eslint-config-typescript": "17.0.6",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-compiler": "19.1.0-rc.2",
@@ -13,9 +13,9 @@
   },
   "devDependencies": {
     "@types/react": "19.1.8",
-    "eslint": "9.29.0",
+    "eslint": "9.30.0",
     "jest": "30.0.3",
-    "prettier": "3.6.1",
+    "prettier": "3.6.2",
     "react": "19.1.0"
   },
   "engines": {
