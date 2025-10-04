@@ -5,8 +5,8 @@ const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactPlugin = require("eslint-plugin-react");
 const reactCompilerPlugin = require("eslint-plugin-react-compiler");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
+const eslintConfig = require("eslint/config");
 const globals = require("globals");
-const tseslint = require("typescript-eslint");
 
 /**
  * @param {object} options ESLint configuration options
@@ -14,7 +14,7 @@ const tseslint = require("typescript-eslint");
  * @returns Configuration Array
  */
 module.exports = function config(options = {}) {
-  return tseslint.config(
+  return eslintConfig.defineConfig(
     {
       extends: turoConfig({
         ...options.turo,
@@ -75,6 +75,7 @@ module.exports = function config(options = {}) {
         reactPlugin.configs.flat["jsx-runtime"],
         jsxA11yPlugin.flatConfigs.recommended,
         reactCompilerPlugin.configs.recommended,
+        reactHooksPlugin.configs.recommended,
       ],
       files: ["**/*.{jsx,tsx,mjsx,cjsx}"],
       languageOptions: {
@@ -86,7 +87,6 @@ module.exports = function config(options = {}) {
         "react-hooks": reactHooksPlugin,
       },
       rules: {
-        ...reactHooksPlugin.configs.recommended.rules,
         "jsx-a11y/anchor-is-valid": [
           "warn",
           {
