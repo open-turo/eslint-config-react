@@ -75,7 +75,7 @@ module.exports = function config(options = {}) {
         reactPlugin.configs.flat["jsx-runtime"],
         jsxA11yPlugin.flatConfigs.recommended,
         reactCompilerPlugin.configs.recommended,
-        reactHooksPlugin.configs.recommended,
+        reactHooksPlugin.configs.recommendedLatest,
       ],
       files: ["**/*.{jsx,tsx,mjsx,cjsx}"],
       languageOptions: {

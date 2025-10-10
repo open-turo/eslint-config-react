@@ -6,7 +6,7 @@ module.exports = {
     "@open-turo/eslint-config-typescript/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:react-hooks/recommended-legacy",
+    "plugin:react-hooks/recommended-latest",
     "plugin:jsx-a11y/recommended",
   ],
   ignorePatterns: ["babel.config.js"],
