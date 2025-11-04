@@ -1950,7 +1950,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
   ],
   "sonarjs/no-async-constructor": [
-    2,
+    0,
   ],
   "sonarjs/no-built-in-override": [
     0,
@@ -1977,7 +1977,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
   ],
   "sonarjs/no-dead-store": [
-    2,
+    0,
   ],
   "sonarjs/no-delete-var": [
     2,
@@ -5024,7 +5024,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/no-async-constructor": [
-    2,
+    0,
   ],
   "sonarjs/no-built-in-override": [
     0,
@@ -5051,7 +5051,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/no-dead-store": [
-    2,
+    0,
   ],
   "sonarjs/no-delete-var": [
     2,
@@ -8476,7 +8476,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "sonarjs/no-async-constructor": [
-    "error",
+    "off",
   ],
   "sonarjs/no-built-in-override": [
     "off",
@@ -8503,7 +8503,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "sonarjs/no-dead-store": [
-    "error",
+    "off",
   ],
   "sonarjs/no-delete-var": [
     "error",
