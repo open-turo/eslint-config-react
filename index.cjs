@@ -3,7 +3,6 @@
 const turoConfig = require("@open-turo/eslint-config-typescript");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
 const reactPlugin = require("eslint-plugin-react");
-const reactCompilerPlugin = require("eslint-plugin-react-compiler");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
 const eslintConfig = require("eslint/config");
 const globals = require("globals");
@@ -73,9 +72,9 @@ module.exports = function config(options = {}) {
       extends: [
         reactPlugin.configs.flat["recommended"],
         reactPlugin.configs.flat["jsx-runtime"],
+        // @ts-expect-error -- Unclear why the types are wrong, matches README setup: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y?tab=readme-ov-file#shareable-configs
         jsxA11yPlugin.flatConfigs.recommended,
-        reactCompilerPlugin.configs.recommended,
-        reactHooksPlugin.configs.recommended,
+        reactHooksPlugin.configs.flat.recommended,
       ],
       files: ["**/*.{jsx,tsx,mjsx,cjsx}"],
       languageOptions: {
@@ -83,28 +82,11 @@ module.exports = function config(options = {}) {
           ...globals.browser,
         },
       },
-      plugins: {
-        "react-hooks": reactHooksPlugin,
-      },
       rules: {
         "jsx-a11y/anchor-is-valid": [
           "warn",
           {
             specialLink: ["to"],
-          },
-        ],
-        /** ESLint plugin for the React Compiler, to enforce rules that make adopting it easier/more effective */
-        "react-compiler/react-compiler": [
-          "error",
-          {
-            environment: {
-              /**
-               * At the time of writing, `eslint-plugin-react-compiler` errors on ref usages in render paths. This rule is noisy,
-               * since it currently reports false positives. We can remove this in the future when the rule is more accurate.
-               * {@link https://github.com/facebook/react/pull/30843 PR that disables this rule in the default config}
-               */
-              validateRefAccessDuringRender: false,
-            },
           },
         ],
         // don't force .jsx extension
