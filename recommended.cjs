@@ -6,7 +6,7 @@ module.exports = {
     "@open-turo/eslint-config-typescript/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:react-hooks/recommended-legacy",
+    "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
   ],
   ignorePatterns: ["babel.config.js"],
@@ -16,7 +16,7 @@ module.exports = {
     },
     jsxPragma: "React",
   },
-  plugins: ["react", "react-hooks", "jsx-a11y", "eslint-plugin-react-compiler"],
+  plugins: ["react", "react-hooks", "jsx-a11y"],
   root: true,
   rules: {
     "jsx-a11y/anchor-is-valid": [
@@ -35,20 +35,6 @@ module.exports = {
           "@testing-library/user-event",
           "nock",
         ],
-      },
-    ],
-    /** ESLint plugin for the React Compiler, to enforce rules that make adopting it easier/more effective */
-    "react-compiler/react-compiler": [
-      "error",
-      {
-        environment: {
-          /**
-           * At the time of writing, `eslint-plugin-react-compiler` errors on ref usages in render paths. This rule is noisy,
-           * since it currently reports false positives. We can remove this in the future when the rule is more accurate.
-           * {@link https://github.com/facebook/react/pull/30843 PR that disables this rule in the default config}
-           */
-          validateRefAccessDuringRender: false,
-        },
       },
     ],
     // don't force .jsx extension
