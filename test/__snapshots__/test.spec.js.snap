@@ -8009,7 +8009,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "react-hooks/incompatible-library": [
-    "warn",
+    "error",
   ],
   "react-hooks/preserve-manual-memoization": [
     "error",
