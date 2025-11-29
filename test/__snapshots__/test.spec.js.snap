@@ -7997,7 +7997,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "react-hooks/exhaustive-deps": [
-    "warn",
+    "error",
   ],
   "react-hooks/gating": [
     "error",
@@ -8033,7 +8033,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "react-hooks/unsupported-syntax": [
-    "warn",
+    "error",
   ],
   "react-hooks/use-memo": [
     "error",
