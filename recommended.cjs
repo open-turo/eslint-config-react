@@ -37,6 +37,12 @@ module.exports = {
         ],
       },
     ],
+    /**
+     * Set as "warn" by default, we want to error on incompatible library APIs for dev visibility (to require // eslint-disable)
+     *
+     * {@link https://react.dev/reference/eslint-plugin-react-hooks/lints/incompatible-library docs}
+     */
+    "react-hooks/incompatible-library": "error",
     // don't force .jsx extension
     "react/jsx-filename-extension": "off",
     // In TS you must use the Fragment syntax instead of the shorthand
