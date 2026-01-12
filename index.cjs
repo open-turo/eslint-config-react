@@ -89,6 +89,29 @@ module.exports = function config(options = {}) {
             specialLink: ["to"],
           },
         ],
+        /**
+         * We enforce this as error to be more thoroughly React Compiler-compliant.
+         *
+         * {@link https://react.dev/reference/eslint-plugin-react-hooks/lints/exhaustive-deps docs}
+         */
+        "react-hooks/exhaustive-deps": "error",
+        /**
+         * Set as "warn" by default, we want to error on incompatible library APIs for dev visibility (to require // eslint-disable)
+         *
+         * {@link https://react.dev/reference/eslint-plugin-react-hooks/lints/incompatible-library docs}
+         */
+        "react-hooks/incompatible-library": "error",
+        /**
+         * Technically an undocumented rule, this rule surfaces in syntax that causes the React Compiler to de-opt.
+         * Raising errors increases visibility into whether a component/hook as written cannot be optimized.
+         */
+        "react-hooks/todo": "error",
+        /**
+         * Not a rule we expect to see, but all other rules are set to "error", and so we set this one to "error" too (to require // eslint-disable)
+         *
+         * {@link https://react.dev/reference/eslint-plugin-react-hooks/lints/unsupported-syntax docs}
+         */
+        "react-hooks/unsupported-syntax": "error",
         // don't force .jsx extension
         "react/jsx-filename-extension": "off",
         // In TS you must use the Fragment syntax instead of the shorthand
