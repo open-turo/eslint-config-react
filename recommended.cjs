@@ -50,6 +50,11 @@ module.exports = {
      */
     "react-hooks/incompatible-library": "error",
     /**
+     * Technically an undocumented rule, this rule surfaces in syntax that causes the React Compiler to de-opt.
+     * Raising errors increases visibility into whether a component/hook as written cannot be optimized.
+     */
+    "react-hooks/todo": "error",
+    /**
      * Not a rule we expect to see, but all other rules are set to "error", and so we set this one to "error" too (to require // eslint-disable)
      *
      * {@link https://react.dev/reference/eslint-plugin-react-hooks/lints/unsupported-syntax docs}
