@@ -7,11 +7,11 @@
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.0.1",
-    "globals": "17.1.0",
+    "globals": "17.2.0",
     "typescript-eslint": "8.54.0"
   },
   "devDependencies": {
-    "@types/react": "19.2.9",
+    "@types/react": "19.2.10",
     "eslint": "9.39.2",
     "jest": "30.2.0",
     "prettier": "3.8.1",
