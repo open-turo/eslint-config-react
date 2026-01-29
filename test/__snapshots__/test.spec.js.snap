@@ -1787,6 +1787,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "sonarjs/duplicates-in-character-class": [
     2,
   ],
+  "sonarjs/dynamically-constructed-templates": [
+    2,
+  ],
   "sonarjs/elseif-without-else": [
     0,
   ],
@@ -1856,6 +1859,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
   ],
   "sonarjs/generator-without-yield": [
+    2,
+  ],
+  "sonarjs/hardcoded-secret-signatures": [
     2,
   ],
   "sonarjs/hashing": [
@@ -2378,6 +2384,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   ],
   "sonarjs/regular-expr": [
     0,
+  ],
+  "sonarjs/review-blockchain-mnemonic": [
+    2,
   ],
   "sonarjs/session-regeneration": [
     2,
@@ -4861,6 +4870,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/duplicates-in-character-class": [
     2,
   ],
+  "sonarjs/dynamically-constructed-templates": [
+    2,
+  ],
   "sonarjs/elseif-without-else": [
     0,
   ],
@@ -4930,6 +4942,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/generator-without-yield": [
+    2,
+  ],
+  "sonarjs/hardcoded-secret-signatures": [
     2,
   ],
   "sonarjs/hashing": [
@@ -5452,6 +5467,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   ],
   "sonarjs/regular-expr": [
     0,
+  ],
+  "sonarjs/review-blockchain-mnemonic": [
+    2,
   ],
   "sonarjs/session-regeneration": [
     2,
@@ -8383,6 +8401,9 @@ exports[`validate config the legacy recommended config is correct 1`] = `
   "sonarjs/duplicates-in-character-class": [
     "error",
   ],
+  "sonarjs/dynamically-constructed-templates": [
+    "error",
+  ],
   "sonarjs/elseif-without-else": [
     "off",
   ],
@@ -8441,6 +8462,9 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "sonarjs/generator-without-yield": [
+    "error",
+  ],
+  "sonarjs/hardcoded-secret-signatures": [
     "error",
   ],
   "sonarjs/hashing": [
@@ -8919,6 +8943,9 @@ exports[`validate config the legacy recommended config is correct 1`] = `
   ],
   "sonarjs/regular-expr": [
     "off",
+  ],
+  "sonarjs/review-blockchain-mnemonic": [
+    "error",
   ],
   "sonarjs/session-regeneration": [
     "error",
