@@ -685,6 +685,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "@typescript-eslint/no-non-null-assertion": [
     2,
   ],
+  "@typescript-eslint/no-redeclare": [
+    2,
+  ],
   "@typescript-eslint/no-redundant-type-constituents": [
     2,
   ],
@@ -790,9 +793,6 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
   ],
   "@typescript-eslint/prefer-return-this-type": [
-    2,
-  ],
-  "@typescript-eslint/prefer-ts-expect-error": [
     2,
   ],
   "@typescript-eslint/quotes": [
@@ -903,7 +903,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "constructor-super": [
-    2,
+    0,
   ],
   "curly": [
     0,
@@ -967,7 +967,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "getter-return": [
-    2,
+    0,
     {
       "allowImplicit": false,
     },
@@ -1430,7 +1430,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
   ],
   "no-class-assign": [
-    2,
+    0,
   ],
   "no-comma-dangle": [
     0,
@@ -1446,7 +1446,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "no-const-assign": [
-    2,
+    0,
   ],
   "no-constant-binary-expression": [
     2,
@@ -1467,16 +1467,16 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
   ],
   "no-dupe-args": [
-    2,
+    0,
   ],
   "no-dupe-class-members": [
-    2,
+    0,
   ],
   "no-dupe-else-if": [
     2,
   ],
   "no-dupe-keys": [
-    2,
+    0,
   ],
   "no-duplicate-case": [
     2,
@@ -1523,7 +1523,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "no-func-assign": [
-    2,
+    0,
   ],
   "no-global-assign": [
     2,
@@ -1535,7 +1535,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "no-import-assign": [
-    2,
+    0,
   ],
   "no-invalid-regexp": [
     2,
@@ -1579,7 +1579,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "no-new-native-nonconstructor": [
-    2,
+    0,
   ],
   "no-new-symbol": [
     0,
@@ -1588,7 +1588,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
   ],
   "no-obj-calls": [
-    2,
+    0,
   ],
   "no-octal": [
     2,
@@ -1597,7 +1597,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
   ],
   "no-redeclare": [
-    2,
+    0,
     {
       "builtinGlobals": true,
     },
@@ -1618,7 +1618,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     },
   ],
   "no-setter-return": [
-    2,
+    0,
   ],
   "no-shadow-restricted-names": [
     2,
@@ -1639,7 +1639,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "no-this-before-super": [
-    2,
+    0,
   ],
   "no-throw-literal": [
     0,
@@ -1648,7 +1648,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "no-undef": [
-    2,
+    0,
     {
       "typeof": false,
     },
@@ -1657,13 +1657,13 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "no-unreachable": [
-    2,
+    0,
   ],
   "no-unsafe-finally": [
     2,
   ],
   "no-unsafe-negation": [
-    2,
+    0,
     {
       "enforceForOrderingRelations": false,
     },
@@ -1688,10 +1688,10 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
   ],
   "no-unused-private-class-members": [
-    2,
+    0,
   ],
   "no-unused-vars": [
-    2,
+    0,
   ],
   "no-useless-backreference": [
     2,
@@ -1715,7 +1715,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "no-with": [
-    2,
+    0,
   ],
   "no-wrap-func": [
     0,
@@ -4380,6 +4380,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "@typescript-eslint/no-non-null-assertion": [
     2,
   ],
+  "@typescript-eslint/no-redeclare": [
+    2,
+  ],
   "@typescript-eslint/no-redundant-type-constituents": [
     2,
   ],
@@ -4485,9 +4488,6 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "@typescript-eslint/prefer-return-this-type": [
-    2,
-  ],
-  "@typescript-eslint/prefer-ts-expect-error": [
     2,
   ],
   "@typescript-eslint/quotes": [
@@ -4598,7 +4598,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "constructor-super": [
-    2,
+    0,
   ],
   "curly": [
     0,
@@ -4662,7 +4662,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "getter-return": [
-    2,
+    0,
     {
       "allowImplicit": false,
     },
@@ -5125,7 +5125,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "no-class-assign": [
-    2,
+    0,
   ],
   "no-comma-dangle": [
     0,
@@ -5141,7 +5141,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "no-const-assign": [
-    2,
+    0,
   ],
   "no-constant-binary-expression": [
     2,
@@ -5162,16 +5162,16 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "no-dupe-args": [
-    2,
+    0,
   ],
   "no-dupe-class-members": [
-    2,
+    0,
   ],
   "no-dupe-else-if": [
     2,
   ],
   "no-dupe-keys": [
-    2,
+    0,
   ],
   "no-duplicate-case": [
     2,
@@ -5218,7 +5218,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "no-func-assign": [
-    2,
+    0,
   ],
   "no-global-assign": [
     2,
@@ -5230,7 +5230,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "no-import-assign": [
-    2,
+    0,
   ],
   "no-invalid-regexp": [
     2,
@@ -5274,7 +5274,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "no-new-native-nonconstructor": [
-    2,
+    0,
   ],
   "no-new-symbol": [
     0,
@@ -5283,7 +5283,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "no-obj-calls": [
-    2,
+    0,
   ],
   "no-octal": [
     2,
@@ -5292,7 +5292,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "no-redeclare": [
-    2,
+    0,
     {
       "builtinGlobals": true,
     },
@@ -5313,7 +5313,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     },
   ],
   "no-setter-return": [
-    2,
+    0,
   ],
   "no-shadow-restricted-names": [
     2,
@@ -5334,7 +5334,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "no-this-before-super": [
-    2,
+    0,
   ],
   "no-throw-literal": [
     0,
@@ -5343,7 +5343,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "no-undef": [
-    2,
+    0,
     {
       "typeof": false,
     },
@@ -5352,13 +5352,13 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "no-unreachable": [
-    2,
+    0,
   ],
   "no-unsafe-finally": [
     2,
   ],
   "no-unsafe-negation": [
-    2,
+    0,
     {
       "enforceForOrderingRelations": false,
     },
@@ -5383,10 +5383,10 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "no-unused-private-class-members": [
-    2,
+    0,
   ],
   "no-unused-vars": [
-    2,
+    0,
   ],
   "no-useless-backreference": [
     2,
@@ -5410,7 +5410,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "no-with": [
-    2,
+    0,
   ],
   "no-wrap-func": [
     0,
@@ -8075,6 +8075,9 @@ exports[`validate config the legacy recommended config is correct 1`] = `
   "@typescript-eslint/no-non-null-assertion": [
     "error",
   ],
+  "@typescript-eslint/no-redeclare": [
+    "error",
+  ],
   "@typescript-eslint/no-redundant-type-constituents": [
     "error",
   ],
@@ -8175,9 +8178,6 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "@typescript-eslint/prefer-return-this-type": [
-    "error",
-  ],
-  "@typescript-eslint/prefer-ts-expect-error": [
     "error",
   ],
   "@typescript-eslint/quotes": [
@@ -9018,7 +9018,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-unused-private-class-members": [
-    "error",
+    "off",
   ],
   "no-unused-vars": [
     "off",
@@ -10423,7 +10423,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "unicorn/empty-brace-spaces": [
-    0,
+    "off",
   ],
   "unicorn/error-message": [
     "error",
@@ -10516,7 +10516,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "unicorn/no-nested-ternary": [
-    0,
+    "off",
   ],
   "unicorn/no-new-array": [
     "error",
@@ -10585,7 +10585,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "unicorn/number-literal-case": [
-    0,
+    "off",
   ],
   "unicorn/numeric-separators-style": [
     "error",
@@ -10774,7 +10774,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "unicorn/template-indent": [
-    0,
+    "off",
   ],
   "unicorn/text-encoding-identifier-case": [
     "error",
