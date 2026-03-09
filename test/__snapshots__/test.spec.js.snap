@@ -553,6 +553,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   ],
   "@typescript-eslint/ban-ts-comment": [
     2,
+    {
+      "minimumDescriptionLength": 10,
+    },
   ],
   "@typescript-eslint/block-spacing": [
     0,
@@ -619,6 +622,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "@typescript-eslint/no-duplicate-type-constituents": [
     2,
   ],
+  "@typescript-eslint/no-dynamic-delete": [
+    2,
+  ],
   "@typescript-eslint/no-empty-object-type": [
     2,
   ],
@@ -634,6 +640,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "@typescript-eslint/no-extra-semi": [
     0,
   ],
+  "@typescript-eslint/no-extraneous-class": [
+    2,
+  ],
   "@typescript-eslint/no-floating-promises": [
     2,
   ],
@@ -646,16 +655,34 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "@typescript-eslint/no-import-type-side-effects": [
     2,
   ],
+  "@typescript-eslint/no-invalid-void-type": [
+    2,
+  ],
+  "@typescript-eslint/no-meaningless-void-operator": [
+    2,
+  ],
   "@typescript-eslint/no-misused-new": [
     2,
   ],
   "@typescript-eslint/no-misused-promises": [
     2,
   ],
+  "@typescript-eslint/no-misused-spread": [
+    2,
+  ],
+  "@typescript-eslint/no-mixed-enums": [
+    2,
+  ],
   "@typescript-eslint/no-namespace": [
     2,
   ],
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing": [
+    2,
+  ],
   "@typescript-eslint/no-non-null-asserted-optional-chain": [
+    2,
+  ],
+  "@typescript-eslint/no-non-null-assertion": [
     2,
   ],
   "@typescript-eslint/no-redundant-type-constituents": [
@@ -673,6 +700,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "@typescript-eslint/no-unnecessary-condition": [
     0,
   ],
+  "@typescript-eslint/no-unnecessary-template-expression": [
+    2,
+  ],
   "@typescript-eslint/no-unnecessary-type-arguments": [
     0,
   ],
@@ -680,6 +710,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
   ],
   "@typescript-eslint/no-unnecessary-type-constraint": [
+    2,
+  ],
+  "@typescript-eslint/no-unnecessary-type-conversion": [
     2,
   ],
   "@typescript-eslint/no-unnecessary-type-parameters": [
@@ -726,6 +759,12 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
       "argsIgnorePattern": "^_",
     },
   ],
+  "@typescript-eslint/no-useless-constructor": [
+    2,
+  ],
+  "@typescript-eslint/no-useless-default-assignment": [
+    2,
+  ],
   "@typescript-eslint/no-wrapper-object-types": [
     2,
   ],
@@ -738,10 +777,19 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "@typescript-eslint/prefer-as-const": [
     2,
   ],
+  "@typescript-eslint/prefer-literal-enum-member": [
+    2,
+  ],
   "@typescript-eslint/prefer-namespace-keyword": [
     2,
   ],
   "@typescript-eslint/prefer-promise-reject-errors": [
+    2,
+  ],
+  "@typescript-eslint/prefer-reduce-type-parameter": [
+    2,
+  ],
+  "@typescript-eslint/prefer-return-this-type": [
     2,
   ],
   "@typescript-eslint/prefer-ts-expect-error": [
@@ -750,14 +798,36 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "@typescript-eslint/quotes": [
     0,
   ],
+  "@typescript-eslint/related-getter-setter-pairs": [
+    2,
+  ],
   "@typescript-eslint/require-await": [
     2,
   ],
   "@typescript-eslint/restrict-plus-operands": [
     2,
+    {
+      "allowAny": false,
+      "allowBoolean": false,
+      "allowNullish": false,
+      "allowNumberAndString": false,
+      "allowRegExp": false,
+    },
   ],
   "@typescript-eslint/restrict-template-expressions": [
     2,
+    {
+      "allowAny": false,
+      "allowBoolean": false,
+      "allowNever": false,
+      "allowNullish": false,
+      "allowNumber": false,
+      "allowRegExp": false,
+    },
+  ],
+  "@typescript-eslint/return-await": [
+    2,
+    "error-handling-correctness-only",
   ],
   "@typescript-eslint/semi": [
     0,
@@ -778,6 +848,12 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "@typescript-eslint/unbound-method": [
+    2,
+  ],
+  "@typescript-eslint/unified-signatures": [
+    2,
+  ],
+  "@typescript-eslint/use-unknown-in-catch-callback-variable": [
     2,
   ],
   "array-bracket-newline": [
@@ -1222,6 +1298,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "no-reserved-keys": [
     0,
   ],
+  "no-return-await": [
+    0,
+  ],
   "no-self-assign": [
     2,
     {
@@ -1310,6 +1389,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "no-useless-catch": [
     2,
   ],
+  "no-useless-constructor": [
+    0,
+  ],
   "no-useless-escape": [
     2,
     {
@@ -1359,8 +1441,84 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "perfectionist/sort-classes": [
     2,
     {
-      "order": "asc",
-      "type": "alphabetical",
+      "groups": [
+        "index-signature",
+        [
+          "static-property",
+          "static-accessor-property",
+        ],
+        [
+          "static-get-method",
+          "static-set-method",
+        ],
+        [
+          "protected-static-property",
+          "protected-static-accessor-property",
+        ],
+        [
+          "protected-static-get-method",
+          "protected-static-set-method",
+        ],
+        [
+          "private-static-property",
+          "private-static-accessor-property",
+        ],
+        [
+          "private-static-get-method",
+          "private-static-set-method",
+        ],
+        "static-block",
+        [
+          "property",
+          "accessor-property",
+        ],
+        [
+          "protected-property",
+          "protected-accessor-property",
+        ],
+        [
+          "private-property",
+          "private-accessor-property",
+        ],
+        "constructor",
+        [
+          "get-method",
+          "set-method",
+        ],
+        [
+          "protected-get-method",
+          "protected-set-method",
+        ],
+        [
+          "private-get-method",
+          "private-set-method",
+        ],
+        [
+          "static-method",
+          "static-function-property",
+        ],
+        [
+          "protected-static-method",
+          "protected-static-function-property",
+        ],
+        [
+          "private-static-method",
+          "private-static-function-property",
+        ],
+        [
+          "method",
+          "function-property",
+        ],
+        [
+          "protected-method",
+          "protected-function-property",
+        ],
+        [
+          "private-method",
+          "private-function-property",
+        ],
+        "unknown",
+      ],
     },
   ],
   "perfectionist/sort-decorators": [
@@ -1471,15 +1629,13 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "perfectionist/sort-switch-case": [
     2,
     {
-      "order": "asc",
-      "type": "alphabetical",
+      "type": "natural",
     },
   ],
   "perfectionist/sort-union-types": [
     2,
     {
-      "order": "asc",
-      "type": "alphabetical",
+      "type": "natural",
     },
   ],
   "perfectionist/sort-variable-declarations": [
@@ -3629,6 +3785,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   ],
   "@typescript-eslint/ban-ts-comment": [
     2,
+    {
+      "minimumDescriptionLength": 10,
+    },
   ],
   "@typescript-eslint/block-spacing": [
     0,
@@ -3695,6 +3854,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "@typescript-eslint/no-duplicate-type-constituents": [
     2,
   ],
+  "@typescript-eslint/no-dynamic-delete": [
+    2,
+  ],
   "@typescript-eslint/no-empty-object-type": [
     2,
   ],
@@ -3710,6 +3872,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "@typescript-eslint/no-extra-semi": [
     0,
   ],
+  "@typescript-eslint/no-extraneous-class": [
+    2,
+  ],
   "@typescript-eslint/no-floating-promises": [
     2,
   ],
@@ -3722,16 +3887,34 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "@typescript-eslint/no-import-type-side-effects": [
     2,
   ],
+  "@typescript-eslint/no-invalid-void-type": [
+    2,
+  ],
+  "@typescript-eslint/no-meaningless-void-operator": [
+    2,
+  ],
   "@typescript-eslint/no-misused-new": [
     2,
   ],
   "@typescript-eslint/no-misused-promises": [
     2,
   ],
+  "@typescript-eslint/no-misused-spread": [
+    2,
+  ],
+  "@typescript-eslint/no-mixed-enums": [
+    2,
+  ],
   "@typescript-eslint/no-namespace": [
     2,
   ],
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing": [
+    2,
+  ],
   "@typescript-eslint/no-non-null-asserted-optional-chain": [
+    2,
+  ],
+  "@typescript-eslint/no-non-null-assertion": [
     2,
   ],
   "@typescript-eslint/no-redundant-type-constituents": [
@@ -3749,6 +3932,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "@typescript-eslint/no-unnecessary-condition": [
     0,
   ],
+  "@typescript-eslint/no-unnecessary-template-expression": [
+    2,
+  ],
   "@typescript-eslint/no-unnecessary-type-arguments": [
     0,
   ],
@@ -3756,6 +3942,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "@typescript-eslint/no-unnecessary-type-constraint": [
+    2,
+  ],
+  "@typescript-eslint/no-unnecessary-type-conversion": [
     2,
   ],
   "@typescript-eslint/no-unnecessary-type-parameters": [
@@ -3802,6 +3991,12 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
       "argsIgnorePattern": "^_",
     },
   ],
+  "@typescript-eslint/no-useless-constructor": [
+    2,
+  ],
+  "@typescript-eslint/no-useless-default-assignment": [
+    2,
+  ],
   "@typescript-eslint/no-wrapper-object-types": [
     2,
   ],
@@ -3814,10 +4009,19 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "@typescript-eslint/prefer-as-const": [
     2,
   ],
+  "@typescript-eslint/prefer-literal-enum-member": [
+    2,
+  ],
   "@typescript-eslint/prefer-namespace-keyword": [
     2,
   ],
   "@typescript-eslint/prefer-promise-reject-errors": [
+    2,
+  ],
+  "@typescript-eslint/prefer-reduce-type-parameter": [
+    2,
+  ],
+  "@typescript-eslint/prefer-return-this-type": [
     2,
   ],
   "@typescript-eslint/prefer-ts-expect-error": [
@@ -3826,14 +4030,36 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "@typescript-eslint/quotes": [
     0,
   ],
+  "@typescript-eslint/related-getter-setter-pairs": [
+    2,
+  ],
   "@typescript-eslint/require-await": [
     2,
   ],
   "@typescript-eslint/restrict-plus-operands": [
     2,
+    {
+      "allowAny": false,
+      "allowBoolean": false,
+      "allowNullish": false,
+      "allowNumberAndString": false,
+      "allowRegExp": false,
+    },
   ],
   "@typescript-eslint/restrict-template-expressions": [
     2,
+    {
+      "allowAny": false,
+      "allowBoolean": false,
+      "allowNever": false,
+      "allowNullish": false,
+      "allowNumber": false,
+      "allowRegExp": false,
+    },
+  ],
+  "@typescript-eslint/return-await": [
+    2,
+    "error-handling-correctness-only",
   ],
   "@typescript-eslint/semi": [
     0,
@@ -3854,6 +4080,12 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "@typescript-eslint/unbound-method": [
+    2,
+  ],
+  "@typescript-eslint/unified-signatures": [
+    2,
+  ],
+  "@typescript-eslint/use-unknown-in-catch-callback-variable": [
     2,
   ],
   "array-bracket-newline": [
@@ -4298,6 +4530,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "no-reserved-keys": [
     0,
   ],
+  "no-return-await": [
+    0,
+  ],
   "no-self-assign": [
     2,
     {
@@ -4386,6 +4621,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "no-useless-catch": [
     2,
   ],
+  "no-useless-constructor": [
+    0,
+  ],
   "no-useless-escape": [
     2,
     {
@@ -4435,8 +4673,84 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "perfectionist/sort-classes": [
     2,
     {
-      "order": "asc",
-      "type": "alphabetical",
+      "groups": [
+        "index-signature",
+        [
+          "static-property",
+          "static-accessor-property",
+        ],
+        [
+          "static-get-method",
+          "static-set-method",
+        ],
+        [
+          "protected-static-property",
+          "protected-static-accessor-property",
+        ],
+        [
+          "protected-static-get-method",
+          "protected-static-set-method",
+        ],
+        [
+          "private-static-property",
+          "private-static-accessor-property",
+        ],
+        [
+          "private-static-get-method",
+          "private-static-set-method",
+        ],
+        "static-block",
+        [
+          "property",
+          "accessor-property",
+        ],
+        [
+          "protected-property",
+          "protected-accessor-property",
+        ],
+        [
+          "private-property",
+          "private-accessor-property",
+        ],
+        "constructor",
+        [
+          "get-method",
+          "set-method",
+        ],
+        [
+          "protected-get-method",
+          "protected-set-method",
+        ],
+        [
+          "private-get-method",
+          "private-set-method",
+        ],
+        [
+          "static-method",
+          "static-function-property",
+        ],
+        [
+          "protected-static-method",
+          "protected-static-function-property",
+        ],
+        [
+          "private-static-method",
+          "private-static-function-property",
+        ],
+        [
+          "method",
+          "function-property",
+        ],
+        [
+          "protected-method",
+          "protected-function-property",
+        ],
+        [
+          "private-method",
+          "private-function-property",
+        ],
+        "unknown",
+      ],
     },
   ],
   "perfectionist/sort-decorators": [
@@ -4547,15 +4861,13 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "perfectionist/sort-switch-case": [
     2,
     {
-      "order": "asc",
-      "type": "alphabetical",
+      "type": "natural",
     },
   ],
   "perfectionist/sort-union-types": [
     2,
     {
-      "order": "asc",
-      "type": "alphabetical",
+      "type": "natural",
     },
   ],
   "perfectionist/sort-variable-declarations": [
@@ -7049,7 +7361,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "constructor-super": [
-    "off",
+    2,
   ],
   "curly": [
     0,
@@ -7112,7 +7424,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "getter-return": [
-    "off",
+    2,
   ],
   "implicit-arrow-linebreak": [
     "off",
@@ -7576,7 +7888,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-class-assign": [
-    "off",
+    2,
   ],
   "no-comma-dangle": [
     "off",
@@ -7591,7 +7903,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     0,
   ],
   "no-const-assign": [
-    "off",
+    2,
   ],
   "no-constant-binary-expression": [
     "error",
@@ -7609,16 +7921,16 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-dupe-args": [
-    "off",
+    2,
   ],
   "no-dupe-class-members": [
-    "off",
+    2,
   ],
   "no-dupe-else-if": [
     "error",
   ],
   "no-dupe-keys": [
-    "off",
+    2,
   ],
   "no-duplicate-case": [
     "error",
@@ -7654,7 +7966,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "no-func-assign": [
-    "off",
+    2,
   ],
   "no-global-assign": [
     "error",
@@ -7663,7 +7975,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "no-import-assign": [
-    "off",
+    2,
   ],
   "no-invalid-regexp": [
     "error",
@@ -7696,7 +8008,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "no-new-native-nonconstructor": [
-    "off",
+    2,
   ],
   "no-new-symbol": [
     "off",
@@ -7705,7 +8017,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-obj-calls": [
-    "off",
+    2,
   ],
   "no-octal": [
     "error",
@@ -7714,7 +8026,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-redeclare": [
-    "off",
+    2,
   ],
   "no-regex-spaces": [
     "error",
@@ -7729,7 +8041,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-setter-return": [
-    "off",
+    2,
   ],
   "no-shadow-restricted-names": [
     "error",
@@ -7747,7 +8059,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     0,
   ],
   "no-this-before-super": [
-    "off",
+    2,
   ],
   "no-throw-literal": [
     "off",
@@ -7756,19 +8068,19 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "no-undef": [
-    "off",
+    2,
   ],
   "no-unexpected-multiline": [
     0,
   ],
   "no-unreachable": [
-    "off",
+    2,
   ],
   "no-unsafe-finally": [
     "error",
   ],
   "no-unsafe-negation": [
-    "off",
+    2,
   ],
   "no-unsafe-optional-chaining": [
     "error",
@@ -7783,7 +8095,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-unused-vars": [
-    "off",
+    2,
   ],
   "no-useless-backreference": [
     "error",
@@ -7804,7 +8116,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "no-with": [
-    "off",
+    2,
   ],
   "no-wrap-func": [
     "off",
@@ -7840,8 +8152,84 @@ exports[`validate config the legacy recommended config is correct 1`] = `
   "perfectionist/sort-classes": [
     "error",
     {
-      "order": "asc",
-      "type": "alphabetical",
+      "groups": [
+        "index-signature",
+        [
+          "static-property",
+          "static-accessor-property",
+        ],
+        [
+          "static-get-method",
+          "static-set-method",
+        ],
+        [
+          "protected-static-property",
+          "protected-static-accessor-property",
+        ],
+        [
+          "protected-static-get-method",
+          "protected-static-set-method",
+        ],
+        [
+          "private-static-property",
+          "private-static-accessor-property",
+        ],
+        [
+          "private-static-get-method",
+          "private-static-set-method",
+        ],
+        "static-block",
+        [
+          "property",
+          "accessor-property",
+        ],
+        [
+          "protected-property",
+          "protected-accessor-property",
+        ],
+        [
+          "private-property",
+          "private-accessor-property",
+        ],
+        "constructor",
+        [
+          "get-method",
+          "set-method",
+        ],
+        [
+          "protected-get-method",
+          "protected-set-method",
+        ],
+        [
+          "private-get-method",
+          "private-set-method",
+        ],
+        [
+          "static-method",
+          "static-function-property",
+        ],
+        [
+          "protected-static-method",
+          "protected-static-function-property",
+        ],
+        [
+          "private-static-method",
+          "private-static-function-property",
+        ],
+        [
+          "method",
+          "function-property",
+        ],
+        [
+          "protected-method",
+          "protected-function-property",
+        ],
+        [
+          "private-method",
+          "private-function-property",
+        ],
+        "unknown",
+      ],
     },
   ],
   "perfectionist/sort-decorators": [
@@ -7952,15 +8340,13 @@ exports[`validate config the legacy recommended config is correct 1`] = `
   "perfectionist/sort-switch-case": [
     "error",
     {
-      "order": "asc",
-      "type": "alphabetical",
+      "type": "natural",
     },
   ],
   "perfectionist/sort-union-types": [
     "error",
     {
-      "order": "asc",
-      "type": "alphabetical",
+      "type": "natural",
     },
   ],
   "perfectionist/sort-variable-declarations": [
@@ -9108,7 +9494,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "unicorn/empty-brace-spaces": [
-    "error",
+    0,
   ],
   "unicorn/error-message": [
     "error",
@@ -9201,7 +9587,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "unicorn/no-nested-ternary": [
-    "error",
+    0,
   ],
   "unicorn/no-new-array": [
     "error",
@@ -9270,7 +9656,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "unicorn/number-literal-case": [
-    "error",
+    0,
   ],
   "unicorn/numeric-separators-style": [
     "error",
@@ -9459,7 +9845,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "unicorn/template-indent": [
-    "error",
+    0,
   ],
   "unicorn/text-encoding-identifier-case": [
     "error",
