@@ -10,39 +10,6 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
   ],
   ignorePatterns: ["babel.config.js"],
-  overrides: [
-    {
-      files: ["**/*.ts", "**/*.tsx"],
-      rules: {
-        /**
-         * `@open-turo/eslint-config-typescript/recommended` applies `ESLINT_V9_DEFAULTS` globally,
-         * which re-enables these base ESLint rules for all files. However, the flat config's
-         * `typescriptConfig()` correctly scopes them as "off" for TypeScript files via
-         * `tseslint.configs.strictTypeChecked`, since TypeScript itself catches these errors.
-         * This override aligns the legacy config with that flat-config behavior.
-         */
-        "constructor-super": "off",
-        "getter-return": "off",
-        "no-class-assign": "off",
-        "no-const-assign": "off",
-        "no-dupe-args": "off",
-        "no-dupe-class-members": "off",
-        "no-dupe-keys": "off",
-        "no-func-assign": "off",
-        "no-import-assign": "off",
-        "no-new-native-nonconstructor": "off",
-        "no-obj-calls": "off",
-        "no-redeclare": "off",
-        "no-setter-return": "off",
-        "no-this-before-super": "off",
-        "no-undef": "off",
-        "no-unreachable": "off",
-        "no-unsafe-negation": "off",
-        "no-unused-vars": "off",
-        "no-with": "off",
-      },
-    },
-  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
