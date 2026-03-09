@@ -848,7 +848,7 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     0,
   ],
   "@typescript-eslint/unbound-method": [
-    2,
+    0,
   ],
   "@typescript-eslint/unified-signatures": [
     2,
@@ -997,7 +997,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
     2,
     {
       "devDependencies": [
-        "eslint.config.?([cm])[jt]s?(x)",
+        "**/__tests__/**/*.?([cm])[jt]s?(x)",
+        "**/*.spec.?([cm])[jt]s?(x)",
+        "**/*.test.?([cm])[jt]s?(x)",
       ],
     },
   ],
@@ -1018,6 +1020,314 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   ],
   "indent-legacy": [
     0,
+  ],
+  "jest/expect-expect": [
+    1,
+  ],
+  "jest/no-alias-methods": [
+    2,
+  ],
+  "jest/no-commented-out-tests": [
+    1,
+  ],
+  "jest/no-conditional-expect": [
+    2,
+  ],
+  "jest/no-deprecated-functions": [
+    2,
+  ],
+  "jest/no-disabled-tests": [
+    1,
+  ],
+  "jest/no-done-callback": [
+    2,
+  ],
+  "jest/no-export": [
+    2,
+  ],
+  "jest/no-focused-tests": [
+    2,
+  ],
+  "jest/no-identical-title": [
+    2,
+  ],
+  "jest/no-interpolation-in-snapshots": [
+    2,
+  ],
+  "jest/no-jasmine-globals": [
+    2,
+  ],
+  "jest/no-jest-import": [
+    0,
+  ],
+  "jest/no-mocks-import": [
+    2,
+  ],
+  "jest/no-standalone-expect": [
+    2,
+  ],
+  "jest/no-test-prefixes": [
+    2,
+  ],
+  "jest/unbound-method": [
+    2,
+  ],
+  "jest/valid-describe-callback": [
+    2,
+  ],
+  "jest/valid-expect": [
+    2,
+  ],
+  "jest/valid-expect-in-promise": [
+    2,
+  ],
+  "jest/valid-title": [
+    2,
+  ],
+  "jsx-a11y/alt-text": [
+    2,
+  ],
+  "jsx-a11y/anchor-ambiguous-text": [
+    0,
+  ],
+  "jsx-a11y/anchor-has-content": [
+    2,
+  ],
+  "jsx-a11y/anchor-is-valid": [
+    1,
+    {
+      "specialLink": [
+        "to",
+      ],
+    },
+  ],
+  "jsx-a11y/aria-activedescendant-has-tabindex": [
+    2,
+  ],
+  "jsx-a11y/aria-props": [
+    2,
+  ],
+  "jsx-a11y/aria-proptypes": [
+    2,
+  ],
+  "jsx-a11y/aria-role": [
+    2,
+  ],
+  "jsx-a11y/aria-unsupported-elements": [
+    2,
+  ],
+  "jsx-a11y/autocomplete-valid": [
+    2,
+  ],
+  "jsx-a11y/click-events-have-key-events": [
+    2,
+  ],
+  "jsx-a11y/control-has-associated-label": [
+    0,
+    {
+      "ignoreElements": [
+        "audio",
+        "canvas",
+        "embed",
+        "input",
+        "textarea",
+        "tr",
+        "video",
+      ],
+      "ignoreRoles": [
+        "grid",
+        "listbox",
+        "menu",
+        "menubar",
+        "radiogroup",
+        "row",
+        "tablist",
+        "toolbar",
+        "tree",
+        "treegrid",
+      ],
+      "includeRoles": [
+        "alert",
+        "dialog",
+      ],
+    },
+  ],
+  "jsx-a11y/heading-has-content": [
+    2,
+  ],
+  "jsx-a11y/html-has-lang": [
+    2,
+  ],
+  "jsx-a11y/iframe-has-title": [
+    2,
+  ],
+  "jsx-a11y/img-redundant-alt": [
+    2,
+  ],
+  "jsx-a11y/interactive-supports-focus": [
+    2,
+    {
+      "tabbable": [
+        "button",
+        "checkbox",
+        "link",
+        "searchbox",
+        "spinbutton",
+        "switch",
+        "textbox",
+      ],
+    },
+  ],
+  "jsx-a11y/label-has-associated-control": [
+    2,
+  ],
+  "jsx-a11y/label-has-for": [
+    0,
+  ],
+  "jsx-a11y/media-has-caption": [
+    2,
+  ],
+  "jsx-a11y/mouse-events-have-key-events": [
+    2,
+  ],
+  "jsx-a11y/no-access-key": [
+    2,
+  ],
+  "jsx-a11y/no-autofocus": [
+    2,
+  ],
+  "jsx-a11y/no-distracting-elements": [
+    2,
+  ],
+  "jsx-a11y/no-interactive-element-to-noninteractive-role": [
+    2,
+    {
+      "canvas": [
+        "img",
+      ],
+      "tr": [
+        "none",
+        "presentation",
+      ],
+    },
+  ],
+  "jsx-a11y/no-noninteractive-element-interactions": [
+    2,
+    {
+      "alert": [
+        "onKeyUp",
+        "onKeyDown",
+        "onKeyPress",
+      ],
+      "body": [
+        "onError",
+        "onLoad",
+      ],
+      "dialog": [
+        "onKeyUp",
+        "onKeyDown",
+        "onKeyPress",
+      ],
+      "handlers": [
+        "onClick",
+        "onError",
+        "onLoad",
+        "onMouseDown",
+        "onMouseUp",
+        "onKeyPress",
+        "onKeyDown",
+        "onKeyUp",
+      ],
+      "iframe": [
+        "onError",
+        "onLoad",
+      ],
+      "img": [
+        "onError",
+        "onLoad",
+      ],
+    },
+  ],
+  "jsx-a11y/no-noninteractive-element-to-interactive-role": [
+    2,
+    {
+      "fieldset": [
+        "radiogroup",
+        "presentation",
+      ],
+      "li": [
+        "menuitem",
+        "menuitemradio",
+        "menuitemcheckbox",
+        "option",
+        "row",
+        "tab",
+        "treeitem",
+      ],
+      "ol": [
+        "listbox",
+        "menu",
+        "menubar",
+        "radiogroup",
+        "tablist",
+        "tree",
+        "treegrid",
+      ],
+      "table": [
+        "grid",
+      ],
+      "td": [
+        "gridcell",
+      ],
+      "ul": [
+        "listbox",
+        "menu",
+        "menubar",
+        "radiogroup",
+        "tablist",
+        "tree",
+        "treegrid",
+      ],
+    },
+  ],
+  "jsx-a11y/no-noninteractive-tabindex": [
+    2,
+    {
+      "allowExpressionValues": true,
+      "roles": [
+        "tabpanel",
+      ],
+      "tags": [],
+    },
+  ],
+  "jsx-a11y/no-redundant-roles": [
+    2,
+  ],
+  "jsx-a11y/no-static-element-interactions": [
+    2,
+    {
+      "allowExpressionValues": true,
+      "handlers": [
+        "onClick",
+        "onMouseDown",
+        "onMouseUp",
+        "onKeyPress",
+        "onKeyDown",
+        "onKeyUp",
+      ],
+    },
+  ],
+  "jsx-a11y/role-has-required-aria-props": [
+    2,
+  ],
+  "jsx-a11y/role-supports-aria-props": [
+    2,
+  ],
+  "jsx-a11y/scope": [
+    2,
+  ],
+  "jsx-a11y/tabindex-no-positive": [
+    2,
   ],
   "jsx-quotes": [
     0,
@@ -1680,6 +1990,63 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "quotes": [
     0,
   ],
+  "react-hooks/component-hook-factories": [
+    2,
+  ],
+  "react-hooks/config": [
+    2,
+  ],
+  "react-hooks/error-boundaries": [
+    2,
+  ],
+  "react-hooks/exhaustive-deps": [
+    2,
+  ],
+  "react-hooks/gating": [
+    2,
+  ],
+  "react-hooks/globals": [
+    2,
+  ],
+  "react-hooks/immutability": [
+    2,
+  ],
+  "react-hooks/incompatible-library": [
+    2,
+  ],
+  "react-hooks/preserve-manual-memoization": [
+    2,
+  ],
+  "react-hooks/purity": [
+    2,
+  ],
+  "react-hooks/refs": [
+    2,
+  ],
+  "react-hooks/rules-of-hooks": [
+    2,
+  ],
+  "react-hooks/set-state-in-effect": [
+    2,
+  ],
+  "react-hooks/set-state-in-render": [
+    2,
+  ],
+  "react-hooks/static-components": [
+    2,
+  ],
+  "react-hooks/todo": [
+    2,
+  ],
+  "react-hooks/unsupported-syntax": [
+    2,
+  ],
+  "react-hooks/use-memo": [
+    2,
+  ],
+  "react/display-name": [
+    2,
+  ],
   "react/jsx-child-element-spacing": [
     0,
   ],
@@ -1698,7 +2065,13 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "react/jsx-equals-spacing": [
     0,
   ],
+  "react/jsx-filename-extension": [
+    0,
+  ],
   "react/jsx-first-prop-new-line": [
+    0,
+  ],
+  "react/jsx-fragments": [
     0,
   ],
   "react/jsx-indent": [
@@ -1707,11 +2080,26 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "react/jsx-indent-props": [
     0,
   ],
+  "react/jsx-key": [
+    2,
+  ],
   "react/jsx-max-props-per-line": [
     0,
   ],
   "react/jsx-newline": [
     0,
+  ],
+  "react/jsx-no-comment-textnodes": [
+    2,
+  ],
+  "react/jsx-no-duplicate-props": [
+    2,
+  ],
+  "react/jsx-no-target-blank": [
+    2,
+  ],
+  "react/jsx-no-undef": [
+    2,
   ],
   "react/jsx-one-expression-per-line": [
     0,
@@ -1719,13 +2107,85 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   "react/jsx-props-no-multi-spaces": [
     0,
   ],
+  "react/jsx-props-no-spreading": [
+    0,
+  ],
+  "react/jsx-sort-props": [
+    2,
+  ],
   "react/jsx-space-before-closing": [
     0,
   ],
   "react/jsx-tag-spacing": [
     0,
   ],
+  "react/jsx-uses-react": [
+    0,
+  ],
+  "react/jsx-uses-vars": [
+    2,
+  ],
   "react/jsx-wrap-multilines": [
+    0,
+  ],
+  "react/no-children-prop": [
+    2,
+  ],
+  "react/no-danger-with-children": [
+    2,
+  ],
+  "react/no-deprecated": [
+    2,
+  ],
+  "react/no-direct-mutation-state": [
+    2,
+  ],
+  "react/no-find-dom-node": [
+    2,
+  ],
+  "react/no-is-mounted": [
+    2,
+  ],
+  "react/no-render-return-value": [
+    2,
+  ],
+  "react/no-string-refs": [
+    2,
+  ],
+  "react/no-unescaped-entities": [
+    2,
+  ],
+  "react/no-unknown-property": [
+    2,
+    {
+      "ignore": [
+        "css",
+      ],
+      "requireDataLowercase": false,
+    },
+  ],
+  "react/no-unsafe": [
+    0,
+  ],
+  "react/prop-types": [
+    2,
+  ],
+  "react/react-in-jsx-scope": [
+    0,
+  ],
+  "react/require-default-props": [
+    0,
+  ],
+  "react/require-render-return": [
+    2,
+  ],
+  "react/sort-prop-types": [
+    2,
+  ],
+  "react/state-in-constructor": [
+    0,
+  ],
+  "react/static-property-placement": [
     0,
   ],
   "require-await": [
@@ -1857,6 +2317,9 @@ exports[`validate config the flat config is correct for index.cjs 1`] = `
   ],
   "sonarjs/class-prototype": [
     0,
+  ],
+  "sonarjs/code-eval": [
+    2,
   ],
   "sonarjs/cognitive-complexity": [
     2,
@@ -4080,7 +4543,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "@typescript-eslint/unbound-method": [
-    2,
+    0,
   ],
   "@typescript-eslint/unified-signatures": [
     2,
@@ -4229,7 +4692,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
     {
       "devDependencies": [
-        "eslint.config.?([cm])[jt]s?(x)",
+        "**/__tests__/**/*.?([cm])[jt]s?(x)",
+        "**/*.spec.?([cm])[jt]s?(x)",
+        "**/*.test.?([cm])[jt]s?(x)",
       ],
     },
   ],
@@ -4250,6 +4715,314 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   ],
   "indent-legacy": [
     0,
+  ],
+  "jest/expect-expect": [
+    1,
+  ],
+  "jest/no-alias-methods": [
+    2,
+  ],
+  "jest/no-commented-out-tests": [
+    1,
+  ],
+  "jest/no-conditional-expect": [
+    2,
+  ],
+  "jest/no-deprecated-functions": [
+    2,
+  ],
+  "jest/no-disabled-tests": [
+    1,
+  ],
+  "jest/no-done-callback": [
+    2,
+  ],
+  "jest/no-export": [
+    2,
+  ],
+  "jest/no-focused-tests": [
+    2,
+  ],
+  "jest/no-identical-title": [
+    2,
+  ],
+  "jest/no-interpolation-in-snapshots": [
+    2,
+  ],
+  "jest/no-jasmine-globals": [
+    2,
+  ],
+  "jest/no-jest-import": [
+    0,
+  ],
+  "jest/no-mocks-import": [
+    2,
+  ],
+  "jest/no-standalone-expect": [
+    2,
+  ],
+  "jest/no-test-prefixes": [
+    2,
+  ],
+  "jest/unbound-method": [
+    2,
+  ],
+  "jest/valid-describe-callback": [
+    2,
+  ],
+  "jest/valid-expect": [
+    2,
+  ],
+  "jest/valid-expect-in-promise": [
+    2,
+  ],
+  "jest/valid-title": [
+    2,
+  ],
+  "jsx-a11y/alt-text": [
+    2,
+  ],
+  "jsx-a11y/anchor-ambiguous-text": [
+    0,
+  ],
+  "jsx-a11y/anchor-has-content": [
+    2,
+  ],
+  "jsx-a11y/anchor-is-valid": [
+    1,
+    {
+      "specialLink": [
+        "to",
+      ],
+    },
+  ],
+  "jsx-a11y/aria-activedescendant-has-tabindex": [
+    2,
+  ],
+  "jsx-a11y/aria-props": [
+    2,
+  ],
+  "jsx-a11y/aria-proptypes": [
+    2,
+  ],
+  "jsx-a11y/aria-role": [
+    2,
+  ],
+  "jsx-a11y/aria-unsupported-elements": [
+    2,
+  ],
+  "jsx-a11y/autocomplete-valid": [
+    2,
+  ],
+  "jsx-a11y/click-events-have-key-events": [
+    2,
+  ],
+  "jsx-a11y/control-has-associated-label": [
+    0,
+    {
+      "ignoreElements": [
+        "audio",
+        "canvas",
+        "embed",
+        "input",
+        "textarea",
+        "tr",
+        "video",
+      ],
+      "ignoreRoles": [
+        "grid",
+        "listbox",
+        "menu",
+        "menubar",
+        "radiogroup",
+        "row",
+        "tablist",
+        "toolbar",
+        "tree",
+        "treegrid",
+      ],
+      "includeRoles": [
+        "alert",
+        "dialog",
+      ],
+    },
+  ],
+  "jsx-a11y/heading-has-content": [
+    2,
+  ],
+  "jsx-a11y/html-has-lang": [
+    2,
+  ],
+  "jsx-a11y/iframe-has-title": [
+    2,
+  ],
+  "jsx-a11y/img-redundant-alt": [
+    2,
+  ],
+  "jsx-a11y/interactive-supports-focus": [
+    2,
+    {
+      "tabbable": [
+        "button",
+        "checkbox",
+        "link",
+        "searchbox",
+        "spinbutton",
+        "switch",
+        "textbox",
+      ],
+    },
+  ],
+  "jsx-a11y/label-has-associated-control": [
+    2,
+  ],
+  "jsx-a11y/label-has-for": [
+    0,
+  ],
+  "jsx-a11y/media-has-caption": [
+    2,
+  ],
+  "jsx-a11y/mouse-events-have-key-events": [
+    2,
+  ],
+  "jsx-a11y/no-access-key": [
+    2,
+  ],
+  "jsx-a11y/no-autofocus": [
+    2,
+  ],
+  "jsx-a11y/no-distracting-elements": [
+    2,
+  ],
+  "jsx-a11y/no-interactive-element-to-noninteractive-role": [
+    2,
+    {
+      "canvas": [
+        "img",
+      ],
+      "tr": [
+        "none",
+        "presentation",
+      ],
+    },
+  ],
+  "jsx-a11y/no-noninteractive-element-interactions": [
+    2,
+    {
+      "alert": [
+        "onKeyUp",
+        "onKeyDown",
+        "onKeyPress",
+      ],
+      "body": [
+        "onError",
+        "onLoad",
+      ],
+      "dialog": [
+        "onKeyUp",
+        "onKeyDown",
+        "onKeyPress",
+      ],
+      "handlers": [
+        "onClick",
+        "onError",
+        "onLoad",
+        "onMouseDown",
+        "onMouseUp",
+        "onKeyPress",
+        "onKeyDown",
+        "onKeyUp",
+      ],
+      "iframe": [
+        "onError",
+        "onLoad",
+      ],
+      "img": [
+        "onError",
+        "onLoad",
+      ],
+    },
+  ],
+  "jsx-a11y/no-noninteractive-element-to-interactive-role": [
+    2,
+    {
+      "fieldset": [
+        "radiogroup",
+        "presentation",
+      ],
+      "li": [
+        "menuitem",
+        "menuitemradio",
+        "menuitemcheckbox",
+        "option",
+        "row",
+        "tab",
+        "treeitem",
+      ],
+      "ol": [
+        "listbox",
+        "menu",
+        "menubar",
+        "radiogroup",
+        "tablist",
+        "tree",
+        "treegrid",
+      ],
+      "table": [
+        "grid",
+      ],
+      "td": [
+        "gridcell",
+      ],
+      "ul": [
+        "listbox",
+        "menu",
+        "menubar",
+        "radiogroup",
+        "tablist",
+        "tree",
+        "treegrid",
+      ],
+    },
+  ],
+  "jsx-a11y/no-noninteractive-tabindex": [
+    2,
+    {
+      "allowExpressionValues": true,
+      "roles": [
+        "tabpanel",
+      ],
+      "tags": [],
+    },
+  ],
+  "jsx-a11y/no-redundant-roles": [
+    2,
+  ],
+  "jsx-a11y/no-static-element-interactions": [
+    2,
+    {
+      "allowExpressionValues": true,
+      "handlers": [
+        "onClick",
+        "onMouseDown",
+        "onMouseUp",
+        "onKeyPress",
+        "onKeyDown",
+        "onKeyUp",
+      ],
+    },
+  ],
+  "jsx-a11y/role-has-required-aria-props": [
+    2,
+  ],
+  "jsx-a11y/role-supports-aria-props": [
+    2,
+  ],
+  "jsx-a11y/scope": [
+    2,
+  ],
+  "jsx-a11y/tabindex-no-positive": [
+    2,
   ],
   "jsx-quotes": [
     0,
@@ -4912,6 +5685,63 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "quotes": [
     0,
   ],
+  "react-hooks/component-hook-factories": [
+    2,
+  ],
+  "react-hooks/config": [
+    2,
+  ],
+  "react-hooks/error-boundaries": [
+    2,
+  ],
+  "react-hooks/exhaustive-deps": [
+    2,
+  ],
+  "react-hooks/gating": [
+    2,
+  ],
+  "react-hooks/globals": [
+    2,
+  ],
+  "react-hooks/immutability": [
+    2,
+  ],
+  "react-hooks/incompatible-library": [
+    2,
+  ],
+  "react-hooks/preserve-manual-memoization": [
+    2,
+  ],
+  "react-hooks/purity": [
+    2,
+  ],
+  "react-hooks/refs": [
+    2,
+  ],
+  "react-hooks/rules-of-hooks": [
+    2,
+  ],
+  "react-hooks/set-state-in-effect": [
+    2,
+  ],
+  "react-hooks/set-state-in-render": [
+    2,
+  ],
+  "react-hooks/static-components": [
+    2,
+  ],
+  "react-hooks/todo": [
+    2,
+  ],
+  "react-hooks/unsupported-syntax": [
+    2,
+  ],
+  "react-hooks/use-memo": [
+    2,
+  ],
+  "react/display-name": [
+    2,
+  ],
   "react/jsx-child-element-spacing": [
     0,
   ],
@@ -4930,7 +5760,13 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "react/jsx-equals-spacing": [
     0,
   ],
+  "react/jsx-filename-extension": [
+    0,
+  ],
   "react/jsx-first-prop-new-line": [
+    0,
+  ],
+  "react/jsx-fragments": [
     0,
   ],
   "react/jsx-indent": [
@@ -4939,11 +5775,26 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "react/jsx-indent-props": [
     0,
   ],
+  "react/jsx-key": [
+    2,
+  ],
   "react/jsx-max-props-per-line": [
     0,
   ],
   "react/jsx-newline": [
     0,
+  ],
+  "react/jsx-no-comment-textnodes": [
+    2,
+  ],
+  "react/jsx-no-duplicate-props": [
+    2,
+  ],
+  "react/jsx-no-target-blank": [
+    2,
+  ],
+  "react/jsx-no-undef": [
+    2,
   ],
   "react/jsx-one-expression-per-line": [
     0,
@@ -4951,13 +5802,85 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "react/jsx-props-no-multi-spaces": [
     0,
   ],
+  "react/jsx-props-no-spreading": [
+    0,
+  ],
+  "react/jsx-sort-props": [
+    2,
+  ],
   "react/jsx-space-before-closing": [
     0,
   ],
   "react/jsx-tag-spacing": [
     0,
   ],
+  "react/jsx-uses-react": [
+    0,
+  ],
+  "react/jsx-uses-vars": [
+    2,
+  ],
   "react/jsx-wrap-multilines": [
+    0,
+  ],
+  "react/no-children-prop": [
+    2,
+  ],
+  "react/no-danger-with-children": [
+    2,
+  ],
+  "react/no-deprecated": [
+    2,
+  ],
+  "react/no-direct-mutation-state": [
+    2,
+  ],
+  "react/no-find-dom-node": [
+    2,
+  ],
+  "react/no-is-mounted": [
+    2,
+  ],
+  "react/no-render-return-value": [
+    2,
+  ],
+  "react/no-string-refs": [
+    2,
+  ],
+  "react/no-unescaped-entities": [
+    2,
+  ],
+  "react/no-unknown-property": [
+    2,
+    {
+      "ignore": [
+        "css",
+      ],
+      "requireDataLowercase": false,
+    },
+  ],
+  "react/no-unsafe": [
+    0,
+  ],
+  "react/prop-types": [
+    2,
+  ],
+  "react/react-in-jsx-scope": [
+    0,
+  ],
+  "react/require-default-props": [
+    0,
+  ],
+  "react/require-render-return": [
+    2,
+  ],
+  "react/sort-prop-types": [
+    2,
+  ],
+  "react/state-in-constructor": [
+    0,
+  ],
+  "react/static-property-placement": [
     0,
   ],
   "require-await": [
@@ -5089,6 +6012,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   ],
   "sonarjs/class-prototype": [
     0,
+  ],
+  "sonarjs/code-eval": [
+    2,
   ],
   "sonarjs/cognitive-complexity": [
     2,
@@ -7361,7 +8287,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "constructor-super": [
-    2,
+    "off",
   ],
   "curly": [
     0,
@@ -7424,7 +8350,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "getter-return": [
-    2,
+    "off",
   ],
   "implicit-arrow-linebreak": [
     "off",
@@ -7888,7 +8814,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-class-assign": [
-    2,
+    "off",
   ],
   "no-comma-dangle": [
     "off",
@@ -7903,7 +8829,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     0,
   ],
   "no-const-assign": [
-    2,
+    "off",
   ],
   "no-constant-binary-expression": [
     "error",
@@ -7921,16 +8847,16 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-dupe-args": [
-    2,
+    "off",
   ],
   "no-dupe-class-members": [
-    2,
+    "off",
   ],
   "no-dupe-else-if": [
     "error",
   ],
   "no-dupe-keys": [
-    2,
+    "off",
   ],
   "no-duplicate-case": [
     "error",
@@ -7966,7 +8892,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "no-func-assign": [
-    2,
+    "off",
   ],
   "no-global-assign": [
     "error",
@@ -7975,7 +8901,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "no-import-assign": [
-    2,
+    "off",
   ],
   "no-invalid-regexp": [
     "error",
@@ -8008,7 +8934,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "no-new-native-nonconstructor": [
-    2,
+    "off",
   ],
   "no-new-symbol": [
     "off",
@@ -8017,7 +8943,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-obj-calls": [
-    2,
+    "off",
   ],
   "no-octal": [
     "error",
@@ -8026,7 +8952,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-redeclare": [
-    2,
+    "off",
   ],
   "no-regex-spaces": [
     "error",
@@ -8041,7 +8967,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-setter-return": [
-    2,
+    "off",
   ],
   "no-shadow-restricted-names": [
     "error",
@@ -8059,7 +8985,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     0,
   ],
   "no-this-before-super": [
-    2,
+    "off",
   ],
   "no-throw-literal": [
     "off",
@@ -8068,19 +8994,19 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "no-undef": [
-    2,
+    "off",
   ],
   "no-unexpected-multiline": [
     0,
   ],
   "no-unreachable": [
-    2,
+    "off",
   ],
   "no-unsafe-finally": [
     "error",
   ],
   "no-unsafe-negation": [
-    2,
+    "off",
   ],
   "no-unsafe-optional-chaining": [
     "error",
@@ -8095,7 +9021,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "error",
   ],
   "no-unused-vars": [
-    2,
+    "off",
   ],
   "no-useless-backreference": [
     "error",
@@ -8116,7 +9042,7 @@ exports[`validate config the legacy recommended config is correct 1`] = `
     "off",
   ],
   "no-with": [
-    2,
+    "off",
   ],
   "no-wrap-func": [
     "off",
@@ -8700,6 +9626,9 @@ exports[`validate config the legacy recommended config is correct 1`] = `
   ],
   "sonarjs/class-prototype": [
     "off",
+  ],
+  "sonarjs/code-eval": [
+    "error",
   ],
   "sonarjs/cognitive-complexity": [
     "error",
