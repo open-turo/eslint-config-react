@@ -76,7 +76,7 @@ module.exports = function config(options = {}) {
         jsxA11yPlugin.flatConfigs.recommended,
         reactHooksPlugin.configs.flat.recommended,
       ],
-      files: ["**/*.{jsx,tsx,mjsx,cjsx}"],
+      files: ["**/*.{js,jsx,ts,tsx,mjsx,cjsx}"],
       languageOptions: {
         globals: {
           ...globals.browser,
