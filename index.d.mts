@@ -1,9 +1,9 @@
+import type { Plugins as TuroPlugins } from "@open-turo/eslint-config-typescript";
 import type jsxA11y from "eslint-plugin-jsx-a11y";
 import type react from "eslint-plugin-react";
 import type reactHooks from "eslint-plugin-react-hooks";
 import type { Config } from "eslint/config";
 import type globals from "globals";
-import type tseslint from "typescript-eslint";
 
 export interface Options {
   /** Options forwarded to `@open-turo/eslint-config-typescript` */
@@ -15,12 +15,11 @@ export interface Options {
  * consumers can extend or reference them without adding redundant direct
  * dependencies to their own `package.json`.
  */
-export interface Plugins {
+export interface Plugins extends TuroPlugins {
   globals: typeof globals;
   jsxA11y: typeof jsxA11y;
   react: typeof react;
   reactHooks: typeof reactHooks;
-  tseslint: typeof tseslint;
 }
 
 export interface TuroOptions {
