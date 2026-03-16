@@ -12,7 +12,7 @@ const globals = require("globals");
  * @param {Parameters<typeof turoConfig>[0]} [options.turo] ESLint configuration options for `@open-turo/eslint-config-typescript`
  * @returns Configuration Array
  */
-module.exports = function config(options = {}) {
+const config = function config(options = {}) {
   return eslintConfig.defineConfig(
     {
       extends: turoConfig({
@@ -138,3 +138,13 @@ module.exports = function config(options = {}) {
     },
   );
 };
+
+config.plugins = {
+  globals,
+  jsxA11y: jsxA11yPlugin,
+  react: reactPlugin,
+  reactHooks: reactHooksPlugin,
+  tseslint: require("typescript-eslint"),
+};
+
+module.exports = config;
