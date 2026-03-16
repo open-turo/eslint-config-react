@@ -140,11 +140,11 @@ const config = function config(options = {}) {
 };
 
 config.plugins = {
+  ...turoConfig.plugins,
   globals,
   jsxA11y: jsxA11yPlugin,
   react: reactPlugin,
   reactHooks: reactHooksPlugin,
-  tseslint: require("typescript-eslint"),
 };
 
 module.exports = config;
