@@ -28,16 +28,6 @@ const turoConfig = require("@open-turo/eslint-config-react");
 module.exports = turoConfig();
 ```
 
-### **[.eslintrc](https://eslint.org/docs/latest/use/configure/configuration-files)** (legacy example)
-
-```jsonc
-{
-  "extends": "@open-turo/eslint-config-react/recommended",
-}
-```
-
-You will have to set the `ESLINT_USE_FLAT_CONFIG` env var to true.
-
 ## Development
 
 ### Pre-commit
