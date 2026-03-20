@@ -40,5 +40,5 @@ declare namespace config {
   const plugins: Plugins;
 }
 
-// eslint-disable-next-line import/no-default-export -- Not valid here
+// eslint-disable-next-line import-x/no-default-export -- Not valid here
 export default config;
