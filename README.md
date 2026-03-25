@@ -30,16 +30,6 @@ import turoConfig from "@open-turo/eslint-config-react";
 export default turoConfig();
 ```
 
-If you must use CommonJS for `eslint.config.cjs`, load the default with dynamic `import()`:
-
-```js
-module.exports = (async () => {
-  const { default: turoConfig } =
-    await import("@open-turo/eslint-config-react");
-  return turoConfig();
-})();
-```
-
 ## Development
 
 ### Pre-commit
