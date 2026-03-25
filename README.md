@@ -22,21 +22,23 @@ npx install-peerdeps --dev @open-turo/eslint-config-react
 
 ### [`eslint.config.js`](https://eslint.org/docs/latest/use/configure/configuration-files-new) (requires eslint>=v8.23.0)
 
+This package is **ESM-only** (like `@open-turo/eslint-config-typescript`). Use `import` in your flat config:
+
 ```js
-const turoConfig = require("@open-turo/eslint-config-react");
+import turoConfig from "@open-turo/eslint-config-react";
 
-module.exports = turoConfig();
+export default turoConfig();
 ```
 
-### **[.eslintrc](https://eslint.org/docs/latest/use/configure/configuration-files)** (legacy example)
+If you must use CommonJS for `eslint.config.cjs`, load the default with dynamic `import()`:
 
-```jsonc
-{
-  "extends": "@open-turo/eslint-config-react/recommended",
-}
+```js
+module.exports = (async () => {
+  const { default: turoConfig } =
+    await import("@open-turo/eslint-config-react");
+  return turoConfig();
+})();
 ```
-
-You will have to set the `ESLINT_USE_FLAT_CONFIG` env var to true.
 
 ## Development
 

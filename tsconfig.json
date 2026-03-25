@@ -23,11 +23,5 @@
     "strict": true,
     "target": "esnext"
   },
-  "include": [
-    "test/**/*",
-    "index.cjs",
-    "index.mjs",
-    "index.d.cts",
-    "index.d.mts"
-  ]
+  "include": ["test/**/*", "index.mjs", "index.d.mts"]
 }

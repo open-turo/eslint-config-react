@@ -1,2 +1,151 @@
-// eslint-disable-next-line import/no-default-export
-export { default } from "./index.cjs";
+// @ts-check
+
+import turoConfig from "@open-turo/eslint-config-typescript";
+import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
+import reactPlugin from "eslint-plugin-react";
+import reactHooksPlugin from "eslint-plugin-react-hooks";
+import eslintConfig from "eslint/config";
+import globals from "globals";
+
+/**
+ * @param {object} options ESLint configuration options
+ * @param {Parameters<typeof turoConfig>[0]} [options.turo] ESLint configuration options for `@open-turo/eslint-config-typescript`
+ * @returns Configuration Array
+ */
+const config = function config(options = {}) {
+  return eslintConfig.defineConfig(
+    {
+      extends: turoConfig({
+        ...options.turo,
+        allowModules: [
+          "@jest/globals",
+          "@testing-library/dom",
+          "@testing-library/react",
+          "@testing-library/user-event",
+          "nock",
+          ...(options.turo?.allowModules ?? []),
+        ],
+      }),
+      rules: {
+        /*
+         * Rules that significantly impact performance time of eslint, and are not
+         * necessarily relevant for react applications.
+         */
+        "sonarjs/aws-apigateway-public-api": "off",
+        "sonarjs/aws-ec2-rds-dms-public": "off",
+        "sonarjs/aws-iam-all-privileges": "off",
+        "sonarjs/aws-iam-privilege-escalation": "off",
+        "sonarjs/aws-iam-public-access": "off",
+        "sonarjs/aws-restricted-ip-admin-access": "off",
+        "sonarjs/jsx-no-useless-fragment": "off",
+        // Already covered with react/no-array-index-key
+        "sonarjs/no-array-index-key": "off",
+        // Already covered with react/no-unknown-property
+        "sonarjs/no-unknown-property": "off",
+        "sonarjs/no-unstable-nested-components": "off",
+        // Allow file names to match a component name
+        "unicorn/filename-case": "off",
+        /**
+         * Prescriptive rule about only using `undefined`, never `null`, to avoid `null`-specific errors.
+         * Not compatible with React because `null` is a valid JSX return.
+         */
+        "unicorn/no-null": 0,
+        // Allow common React abbreviations
+        "unicorn/prevent-abbreviations": [
+          "error",
+          {
+            replacements: {
+              args: false,
+              e: false,
+              el: false,
+              prop: false,
+              props: false,
+              ref: false,
+              rel: false,
+              src: false,
+            },
+          },
+        ],
+      },
+    },
+    {
+      extends: [
+        reactPlugin.configs.flat["recommended"],
+        reactPlugin.configs.flat["jsx-runtime"],
+        // @ts-expect-error -- Unclear why the types are wrong, matches README setup: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y?tab=readme-ov-file#shareable-configs
+        jsxA11yPlugin.flatConfigs.recommended,
+        reactHooksPlugin.configs.flat.recommended,
+      ],
+      files: ["**/*.{js,jsx,ts,tsx,mjsx,cjsx}"],
+      languageOptions: {
+        globals: {
+          ...globals.browser,
+        },
+      },
+      rules: {
+        "jsx-a11y/anchor-is-valid": [
+          "warn",
+          {
+            specialLink: ["to"],
+          },
+        ],
+        /**
+         * We enforce this as error to be more thoroughly React Compiler-compliant.
+         *
+         * {@link https://react.dev/reference/eslint-plugin-react-hooks/lints/exhaustive-deps docs}
+         */
+        "react-hooks/exhaustive-deps": "error",
+        /**
+         * Set as "warn" by default, we want to error on incompatible library APIs for dev visibility (to require // eslint-disable)
+         *
+         * {@link https://react.dev/reference/eslint-plugin-react-hooks/lints/incompatible-library docs}
+         */
+        "react-hooks/incompatible-library": "error",
+        /**
+         * Technically an undocumented rule, this rule surfaces in syntax that causes the React Compiler to de-opt.
+         * Raising errors increases visibility into whether a component/hook as written cannot be optimized.
+         */
+        "react-hooks/todo": "error",
+        /**
+         * Not a rule we expect to see, but all other rules are set to "error", and so we set this one to "error" too (to require // eslint-disable)
+         *
+         * {@link https://react.dev/reference/eslint-plugin-react-hooks/lints/unsupported-syntax docs}
+         */
+        "react-hooks/unsupported-syntax": "error",
+        // don't force .jsx extension
+        "react/jsx-filename-extension": "off",
+        // In TS you must use the Fragment syntax instead of the shorthand
+        "react/jsx-fragments": "off",
+        // This allows props to be spread in JSX
+        "react/jsx-props-no-spreading": "off",
+        // ensure props are alphabetical
+        "react/jsx-sort-props": "error",
+        // Allow emotion css prop
+        "react/no-unknown-property": ["error", { ignore: ["css"] }],
+        // We don't need default props on TS components
+        "react/require-default-props": "off",
+        "react/sort-prop-types": "error",
+        // State initialization can be in the constructor or via class fields
+        "react/state-in-constructor": "off",
+        // This allows static properties to be placed within the class declaration
+        "react/static-property-placement": "off",
+      },
+      settings: {
+        react: {
+          version: "detect",
+        },
+      },
+    },
+  );
+};
+
+config.plugins = {
+  ...turoConfig.plugins,
+  globals,
+  jsxA11y: jsxA11yPlugin,
+  react: reactPlugin,
+  reactHooks: reactHooksPlugin,
+};
+
+// eslint-disable-next-line import/no-default-export -- package entry matches ESLint flat-config convention
+export default config;
