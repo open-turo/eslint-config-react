@@ -2004,9 +2004,6 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "quotes": [
     0,
   ],
-  "react-hooks/component-hook-factories": [
-    2,
-  ],
   "react-hooks/config": [
     2,
   ],
@@ -2326,7 +2323,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/class-name": [
     2,
     {
-      "format": "^[A-Z][a-zA-Z0-9]*$",
+      "format": "^\\$?[A-Z][a-zA-Z0-9]*$",
     },
   ],
   "sonarjs/class-prototype": [
@@ -2413,6 +2410,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   ],
   "sonarjs/dns-prefetching": [
     0,
+  ],
+  "sonarjs/dompurify-unsafe-config": [
+    2,
   ],
   "sonarjs/duplicates-in-character-class": [
     2,
@@ -2883,7 +2883,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "sonarjs/no-unsafe-unzip": [
-    2,
+    0,
   ],
   "sonarjs/no-unstable-nested-components": [
     0,
