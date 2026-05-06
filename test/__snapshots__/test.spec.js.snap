@@ -1377,9 +1377,6 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "n/no-process-exit": [
     2,
   ],
-  "n/no-unpublished-bin": [
-    2,
-  ],
   "n/no-unpublished-import": [
     2,
     {
