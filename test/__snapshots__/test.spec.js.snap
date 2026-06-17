@@ -821,7 +821,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
       "allowBoolean": false,
       "allowNever": false,
       "allowNullish": false,
-      "allowNumber": false,
+      "allowNumber": true,
       "allowRegExp": false,
     },
   ],
