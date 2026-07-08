@@ -2240,7 +2240,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     },
   ],
   "sonarjs/assertions-in-tests": [
-    2,
+    0,
   ],
   "sonarjs/async-test-assertions": [
     2,
@@ -2655,7 +2655,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/no-floating-point-equality": [
-    2,
+    0,
   ],
   "sonarjs/no-for-in-iterable": [
     0,
@@ -2982,7 +2982,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/prefer-specific-assertions": [
-    2,
+    0,
   ],
   "sonarjs/prefer-type-guard": [
     2,
