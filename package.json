@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@types/react": "19.2.17",
-    "eslint": "9.39.5",
+    "eslint": "10.7.0",
     "jest": "30.4.2",
     "prettier": "3.9.6",
     "react": "19.2.8"
@@ -40,7 +40,7 @@
   },
   "name": "@open-turo/eslint-config-react",
   "peerDependencies": {
-    "eslint": "^9.0.0",
+    "eslint": "^9.0.0 || ^10.0.0",
     "prettier": "^3.0.0"
   },
   "publishConfig": {
