@@ -2239,6 +2239,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
       "requireParameterParentheses": false,
     },
   ],
+  "sonarjs/assertions-in-test-cases": [
+    2,
+  ],
   "sonarjs/assertions-in-tests": [
     0,
   ],
@@ -2420,6 +2423,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/existing-groups": [
     2,
   ],
+  "sonarjs/explicit-test-skip": [
+    2,
+  ],
   "sonarjs/expression-complexity": [
     0,
     {
@@ -2536,6 +2542,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
       "threshold": 3,
     },
   ],
+  "sonarjs/memoize-cache-key": [
+    2,
+  ],
   "sonarjs/misplaced-loop-counter": [
     2,
   ],
@@ -2599,6 +2608,12 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/no-dead-store": [
     0,
   ],
+  "sonarjs/no-debug-commands-in-ui-tests": [
+    2,
+  ],
+  "sonarjs/no-default-utility-imports": [
+    2,
+  ],
   "sonarjs/no-delete-var": [
     2,
   ],
@@ -2652,6 +2667,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/no-fallthrough": [
+    2,
+  ],
+  "sonarjs/no-fixed-wait-in-tests": [
     2,
   ],
   "sonarjs/no-floating-point-equality": [
@@ -2742,6 +2760,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/no-internal-api-use": [
     2,
   ],
+  "sonarjs/no-interpolation-in-inline-snapshots": [
+    2,
+  ],
   "sonarjs/no-intrusive-permissions": [
     0,
     {
@@ -2775,6 +2796,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/no-misleading-character-class": [
+    2,
+  ],
+  "sonarjs/no-mixed-completion-style": [
     2,
   ],
   "sonarjs/no-mixed-content": [
@@ -2951,6 +2975,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/os-command": [
     0,
   ],
+  "sonarjs/parameterized-tests": [
+    2,
+  ],
   "sonarjs/post-message": [
     2,
   ],
@@ -2959,6 +2986,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   ],
   "sonarjs/prefer-immediate-return": [
     0,
+  ],
+  "sonarjs/prefer-native-lodash-alternative": [
+    2,
   ],
   "sonarjs/prefer-nullish-coalescing": [
     0,
@@ -3048,6 +3078,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "sonarjs/super-linear-regex": [
+    2,
+  ],
+  "sonarjs/synchronous-suite-callback": [
     2,
   ],
   "sonarjs/table-header": [
