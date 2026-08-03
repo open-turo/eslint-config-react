@@ -2940,7 +2940,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/no-useless-intersection": [
-    2,
+    0,
   ],
   "sonarjs/no-useless-react-setstate": [
     2,
@@ -2964,7 +2964,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "sonarjs/null-dereference": [
-    2,
+    0,
   ],
   "sonarjs/object-alt-content": [
     2,
@@ -2976,7 +2976,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "sonarjs/parameterized-tests": [
-    2,
+    0,
   ],
   "sonarjs/post-message": [
     2,
@@ -2988,7 +2988,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "sonarjs/prefer-native-lodash-alternative": [
-    2,
+    0,
   ],
   "sonarjs/prefer-nullish-coalescing": [
     0,
