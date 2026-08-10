@@ -1010,7 +1010,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     1,
   ],
   "import-x/no-rename-default": [
-    1,
+    0,
   ],
   "import-x/no-unresolved": [
     2,
