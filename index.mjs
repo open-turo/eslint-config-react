@@ -147,5 +147,5 @@ config.plugins = {
   reactHooks: reactHooksPlugin,
 };
 
-// eslint-disable-next-line import/no-default-export -- package entry matches ESLint flat-config convention
+// eslint-disable-next-line import-x/no-default-export -- package entry matches ESLint flat-config convention
 export default config;
