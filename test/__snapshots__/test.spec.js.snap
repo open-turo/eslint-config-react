@@ -649,6 +649,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "@typescript-eslint/no-for-in-array": [
     2,
   ],
+  "@typescript-eslint/no-generated-empty-object-type": [
+    2,
+  ],
   "@typescript-eslint/no-implied-eval": [
     2,
   ],
