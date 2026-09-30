@@ -2251,6 +2251,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/async-test-assertions": [
     2,
   ],
+  "sonarjs/avoid-mutating-nested-properties-of-shallow-clones": [
+    2,
+  ],
   "sonarjs/aws-apigateway-public-api": [
     2,
   ],
@@ -2346,6 +2349,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
       "message": "The regular expression matches this comment.",
       "regularExpression": "",
     },
+  ],
+  "sonarjs/composite-assertions": [
+    0,
   ],
   "sonarjs/concise-regex": [
     2,
@@ -2611,6 +2617,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/no-dead-store": [
     0,
   ],
+  "sonarjs/no-debounce-throttle-in-render": [
+    2,
+  ],
   "sonarjs/no-debug-commands-in-ui-tests": [
     2,
   ],
@@ -2621,6 +2630,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/no-duplicate-in-composite": [
+    2,
+  ],
+  "sonarjs/no-duplicate-parameterized-test-case": [
     2,
   ],
   "sonarjs/no-duplicate-string": [
@@ -2652,6 +2664,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/no-empty-group": [
+    2,
+  ],
+  "sonarjs/no-empty-parameterized-test-dataset": [
     2,
   ],
   "sonarjs/no-empty-test-file": [
@@ -2802,10 +2817,13 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/no-mixed-completion-style": [
-    2,
+    0,
   ],
   "sonarjs/no-mixed-content": [
     0,
+  ],
+  "sonarjs/no-mutate-reactive-state-in-updated-hook": [
+    2,
   ],
   "sonarjs/no-nested-assignment": [
     2,
@@ -2826,6 +2844,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     0,
   ],
   "sonarjs/no-nested-template-literals": [
+    2,
+  ],
+  "sonarjs/no-networkidle-wait": [
     2,
   ],
   "sonarjs/no-os-command-from-path": [
@@ -2951,6 +2972,12 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/no-variable-usage-before-declaration": [
     0,
   ],
+  "sonarjs/no-vue-class-component": [
+    0,
+  ],
+  "sonarjs/no-vue-mixins": [
+    0,
+  ],
   "sonarjs/no-weak-cipher": [
     2,
   ],
@@ -2984,10 +3011,19 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/post-message": [
     2,
   ],
+  "sonarjs/prefer-cypress-should": [
+    0,
+  ],
   "sonarjs/prefer-default-last": [
     2,
   ],
   "sonarjs/prefer-immediate-return": [
+    0,
+  ],
+  "sonarjs/prefer-native-axios-alternative": [
+    0,
+  ],
+  "sonarjs/prefer-native-jquery-alternative": [
     0,
   ],
   "sonarjs/prefer-native-lodash-alternative": [
@@ -3083,6 +3119,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "sonarjs/super-linear-regex": [
     2,
   ],
+  "sonarjs/synchronous-exception-assertions": [
+    2,
+  ],
   "sonarjs/synchronous-suite-callback": [
     2,
   ],
@@ -3093,6 +3132,12 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/test-check-exception": [
+    2,
+  ],
+  "sonarjs/testing-library-prefer-query-by-disappearance": [
+    2,
+  ],
+  "sonarjs/testing-library-query-assertion": [
     2,
   ],
   "sonarjs/todo-tag": [
@@ -3136,6 +3181,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     {
       "format": "^[_$A-Za-z][$A-Za-z0-9]*$|^[_$A-Z][_$A-Z0-9]+$",
     },
+  ],
+  "sonarjs/vitest-mock-at-module-scope": [
+    2,
   ],
   "sonarjs/void-use": [
     2,
