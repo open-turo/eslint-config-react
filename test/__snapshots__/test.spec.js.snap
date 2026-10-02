@@ -736,8 +736,11 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "@typescript-eslint/no-unsafe-declaration-merging": [
     2,
   ],
+  "@typescript-eslint/no-unsafe-enum-assignment": [
+    0,
+  ],
   "@typescript-eslint/no-unsafe-enum-comparison": [
-    2,
+    0,
   ],
   "@typescript-eslint/no-unsafe-function-type": [
     2,
@@ -2847,7 +2850,7 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
     2,
   ],
   "sonarjs/no-networkidle-wait": [
-    2,
+    0,
   ],
   "sonarjs/no-os-command-from-path": [
     2,
