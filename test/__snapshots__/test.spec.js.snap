@@ -1738,6 +1738,9 @@ exports[`validate config the flat config is correct for index.mjs 1`] = `
   "one-var-declaration-per-line": [
     0,
   ],
+  "open-turo/todo-format": [
+    0,
+  ],
   "operator-linebreak": [
     0,
   ],
